@@ -1,0 +1,204 @@
+/* Market Understanding - Company Research Reports */
+:root {
+    --primary: #1a1a2e;
+    --accent: #0f3460;
+    --highlight: #e94560;
+    --gold: #f0a500;
+    --text: #2d3436;
+    --bg: #f8f9fa;
+    --card: #ffffff;
+    --border: #e9ecef;
+    --success: #27ae60;
+    --warning: #f39c12;
+    --danger: #e74c3c;
+    --info: #3498db;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+.container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+/* Header */
+header {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    color: white;
+    padding: 40px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+header .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+header h1 { font-size: 1.6rem; font-weight: 700; letter-spacing: -0.5px; }
+header h1 span { color: var(--highlight); }
+header .meta { font-size: 0.85rem; opacity: 0.85; }
+.back-link { color: white; text-decoration: none; font-size: 0.9rem; opacity: 0.8; transition: opacity 0.2s; }
+.back-link:hover { opacity: 1; }
+
+/* Hero Banner */
+.hero {
+    background: linear-gradient(135deg, var(--accent), var(--primary));
+    color: white;
+    padding: 50px 0;
+}
+.hero .company-name { font-size: 2.2rem; font-weight: 800; margin-bottom: 8px; }
+.hero .tagline { font-size: 1.1rem; opacity: 0.9; margin-bottom: 20px; }
+.hero .stats { display: flex; gap: 24px; flex-wrap: wrap; }
+.hero .stat { background: rgba(255,255,255,0.12); border-radius: 12px; padding: 12px 20px; backdrop-filter: blur(10px); }
+.hero .stat-label { font-size: 0.75rem; text-transform: uppercase; opacity: 0.7; letter-spacing: 1px; }
+.hero .stat-value { font-size: 1.4rem; font-weight: 700; }
+
+/* Tabs Navigation */
+.tab-nav {
+    background: white;
+    border-bottom: 2px solid var(--border);
+    position: sticky;
+    top: 120px;
+    z-index: 99;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.tab-nav .container { display: flex; gap: 0; overflow-x: auto; }
+.tab-btn {
+    padding: 14px 24px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #888;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+.tab-btn:hover { color: var(--primary); }
+.tab-btn.active { color: var(--highlight); border-bottom-color: var(--highlight); }
+
+/* Main Content */
+main { padding: 40px 0 60px; }
+.section { margin-bottom: 48px; }
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--highlight);
+    display: inline-block;
+}
+.subsection { margin-bottom: 32px; }
+.subsection h3 { font-size: 1.15rem; color: var(--accent); margin-bottom: 12px; }
+
+/* Cards */
+.card {
+    background: var(--card);
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border: 1px solid var(--border);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.1); }
+.card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; }
+
+/* Pain Point Cards */
+.pain-point {
+    border-left: 4px solid var(--highlight);
+    padding-left: 20px;
+    margin-bottom: 24px;
+}
+.pain-point h4 { color: var(--highlight); font-size: 1.05rem; margin-bottom: 8px; }
+.pain-point .evidence { font-size: 0.85rem; color: #666; font-style: italic; margin: 8px 0; }
+.pain-point .impact { margin: 8px 0; }
+.pain-point .urgency { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; }
+.urgency-high { background: #fde8e8; color: var(--danger); }
+.urgency-medium { background: #fef3cd; color: #856404; }
+.urgency-low { background: #d4edda; color: #155724; }
+
+/* Solution Fit */
+.fit-table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+.fit-table th {
+    background: var(--accent);
+    color: white;
+    padding: 12px 16px;
+    text-align: left;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+.fit-table td { padding: 12px 16px; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
+.fit-table tr:hover { background: #f8f9ff; }
+.fit-strong { color: var(--success); font-weight: 700; }
+.fit-moderate { color: var(--warning); font-weight: 600; }
+.fit-weak { color: var(--danger); font-weight: 600; }
+
+/* Tags */
+.tag {
+    display: inline-block;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin: 3px 4px;
+}
+.tag-event { background: #e8f4fd; color: #0d6efd; }
+.tag-theme { background: #e8f8f5; color: #0d7d6e; }
+.tag-type { background: #fef3e8; color: #d68910; }
+
+/* Opportunity Score */
+.opportunity-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 16px;
+    padding: 32px;
+    margin: 24px 0;
+}
+.opportunity-card h3 { font-size: 1.3rem; margin-bottom: 12px; }
+.opportunity-card .score {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 8px 0;
+}
+.opportunity-card .score span { font-size: 1.2rem; opacity: 0.8; }
+.opportunity-card ul { margin: 12px 0; padding-left: 20px; }
+.opportunity-card li { margin-bottom: 8px; }
+
+/* Evidence List */
+.evidence-list { list-style: none; padding: 0; }
+.evidence-list li {
+    padding: 10px 16px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.88rem;
+}
+.evidence-list li:last-child { border-bottom: none; }
+.evidence-list .claim { flex: 2; }
+.evidence-list .source { flex: 1; font-size: 0.8rem; color: #888; text-align: right; }
+
+/* Grid layouts */
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+@media (max-width: 768px) { .two-col { grid-template-columns: 1fr; } }
+
+/* Footer */
+footer {
+    background: var(--primary);
+    color: rgba(255,255,255,0.7);
+    text-align: center;
+    padding: 24px;
+    font-size: 0.85rem;
+}
+
+/* Print */
+@media print {
+    header, .tab-nav, footer, .back-link { display: none; }
+    .card { box-shadow: none; border: 1px solid #ddd; break-inside: avoid; }
+}
