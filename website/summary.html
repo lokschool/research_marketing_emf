@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Understanding — Executive Summary | WeExpand</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        :root {
+            --we-purple: #667eea;
+            --we-dark: #1a1a2e;
+            --we-red: #e94560;
+            --we-green: #27ae60;
+            --we-orange: #f39c12;
+            --we-blue: #3498db;
+        }
+        
+        .summary-hero {
+            background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 40%, #16213e 100%);
+            color: white;
+            padding: 60px 0 50px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .summary-hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: radial-gradient(circle at 30% 50%, rgba(102,126,234,0.15) 0%, transparent 50%),
+                        radial-gradient(circle at 70% 30%, rgba(233,69,96,0.1) 0%, transparent 40%);
+        }
+        .summary-hero h1 { font-size: 2.8rem; font-weight: 800; position: relative; z-index: 1; }
+        .summary-hero h1 span { color: var(--we-red); }
+        .summary-hero .subtitle { font-size: 1.2rem; opacity: 0.85; max-width: 750px; margin: 12px auto 0; position: relative; z-index: 1; }
+        
+        .kpi-bar {
+            display: flex; justify-content: center; gap: 32px; margin-top: 36px;
+            flex-wrap: wrap; position: relative; z-index: 1;
+        }
+        .kpi {
+            background: rgba(255,255,255,0.08); backdrop-filter: blur(10px);
+            border-radius: 16px; padding: 24px 32px; text-align: center;
+            min-width: 140px; border: 1px solid rgba(255,255,255,0.1);
+        }
+        .kpi .num { font-size: 2.5rem; font-weight: 800; }
+        .kpi .label { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1.5px; opacity: 0.7; margin-top: 4px; }
+        .kpi.highlight { background: rgba(233,69,96,0.2); border-color: rgba(233,69,96,0.3); }
+        .kpi.highlight .num { color: var(--we-red); }
+        
+        main { padding: 40px 0 60px; }
+        .section-title {
+            font-size: 1.6rem; font-weight: 700; color: var(--we-dark); margin: 48px 0 24px;
+            padding-bottom: 10px; border-bottom: 3px solid var(--we-red); display: inline-block;
+        }
+        .section-title:first-child { margin-top: 0; }
+        
+        .chart-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 24px 0; }
+        @media (max-width: 768px) { .chart-grid { grid-template-columns: 1fr; } }
+        .chart-card {
+            background: white; border-radius: 16px; padding: 28px;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.06); border: 1px solid #e9ecef;
+        }
+        .chart-card h3 { font-size: 1.1rem; color: var(--we-dark); margin-bottom: 16px; }
+        .chart-card canvas { max-height: 300px; }
+        
+        .insight-card {
+            background: white; border-radius: 16px; padding: 28px;
+            margin: 16px 0;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+            border-left: 5px solid var(--we-purple);
+        }
+        .insight-card h3 { color: var(--we-dark); margin-bottom: 12px; font-size: 1.15rem; }
+        .insight-card p { margin: 8px 0; line-height: 1.7; color: #444; }
+        .insight-card ul { margin: 8px 0; padding-left: 20px; }
+        .insight-card li { margin: 6px 0; line-height: 1.6; color: #444; }
+        .insight-card strong { color: var(--we-dark); }
+        .insight-card--warning { border-left-color: var(--we-orange); background: #fffdf5; }
+        
+        .summary-table {
+            width: 100%; border-collapse: collapse; margin: 16px 0;
+            background: white; border-radius: 12px; overflow: hidden;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+        .summary-table th {
+            background: var(--we-dark); color: white; padding: 12px 16px;
+            font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; text-align: left;
+        }
+        .summary-table td { padding: 10px 16px; border-bottom: 1px solid #e9ecef; font-size: 0.9rem; }
+        .summary-table tr:hover { background: #f8f9ff; }
+        .summary-table a { color: var(--we-purple); text-decoration: none; font-weight: 600; }
+        .summary-table a:hover { text-decoration: underline; }
+        
+        .badge {
+            display: inline-block; padding: 4px 12px; border-radius: 20px;
+            font-size: 0.78rem; font-weight: 700;
+        }
+        .badge-high { background: #d4edda; color: #155724; }
+        .badge-medium { background: #fff3cd; color: #856404; }
+        .badge-low { background: #f8d7da; color: #721c24; }
+        
+        .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+        @media (max-width: 768px) { .two-col { grid-template-columns: 1fr; } }
+        
+        .nav-strip {
+            background: white; border-bottom: 2px solid #e9ecef;
+            position: sticky; top: 0; z-index: 100;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        .nav-strip .container { display: flex; gap: 24px; overflow-x: auto; padding: 12px 20px; }
+        .nav-strip a { color: #888; text-decoration: none; font-weight: 600; font-size: 0.9rem; white-space: nowrap; padding: 8px 0; border-bottom: 2px solid transparent; }
+        .nav-strip a:hover, .nav-strip a.active { color: var(--we-red); border-bottom-color: var(--we-red); }
+        
+        footer { text-align: center; padding: 24px; background: var(--we-dark); color: rgba(255,255,255,0.5); font-size: 0.85rem; }
+        footer a { color: var(--we-red); text-decoration: none; }
+    </style>
+</head>
+<body>
+
+<div class="summary-hero">
+    <div class="container">
+        <h1>Hong Kong EMF <span>Market Intelligence</span></h1>
+        <p class="subtitle">Executive Summary: 46 Event Management Firms — Pain Point Analysis, Solution Fit & WeExpand Market Opportunity</p>
+        <div class="kpi-bar">
+            <div class="kpi"><div class="num">46</div><div class="label">Companies Analyzed</div></div>
+            <div class="kpi"><div class="num">213</div><div class="label">Pain Points Identified</div></div>
+            <div class="kpi"><div class="num">16,404</div><div class="label">Total Employees</div></div>
+            <div class="kpi highlight"><div class="num">28</div><div class="label">High-Fit Prospects</div></div>
+            <div class="kpi"><div class="num">4.6</div><div class="label">Avg Pains / Company</div></div>
+        </div>
+    </div>
+</div>
+
+<div class="nav-strip">
+    <div class="container">
+        <a href="#overview" class="active">Overview</a>
+        <a href="#charts">Visualizations</a>
+        <a href="#market">Market Opportunity</a>
+        <a href="#tiers">Target Tiers</a>
+        <a href="#all">All Companies</a>
+        <a href="index.html">Company Index →</a>
+    </div>
+</div>
+
+<main>
+<div class="container">
+
+<!-- OVERVIEW -->
+<section id="overview">
+    <h2 class="section-title">Executive Summary</h2>
+    <div class="two-col">
+        <div class="chart-card">
+            <h3>Key Findings</h3>
+            <ul>
+                <li><strong>168 pain points</strong> identified across 46 companies — avg 4.6 per company</li>
+                <li><strong>#1 pain theme:</strong> Manual Sales & Client Acquisition — nearly every company lacks automated lead gen</li>
+                <li><strong>#2 pain theme:</strong> Year-Round Engagement Gap — annual/biennial events lose community value</li>
+                <li><strong>#3 pain theme:</strong> No Digital Platform — most companies are "dumb" physical operations</li>
+                <li><strong>Top opportunity:</strong> Large exhibition organizers (Informa, RX, GL events, Clarion) represent highest WeExpand ARR potential</li>
+                <li><strong>Greenfield:</strong> Kai Tak Sports Park (opened 2025) — zero legacy systems, HK$30B investment</li>
+            </ul>
+        </div>
+        <div class="chart-card">
+            <h3>WeExpand Go-to-Market Strategy</h3>
+            <ol>
+                <li><strong>Tier 1 (Prime):</strong> 23 companies — immediate outreach. Large organizers + tech-forward events.</li>
+                <li><strong>Tier 2 (Strong):</strong> 15 companies — nurture pipeline. Growing niche players.</li>
+                <li><strong>Tier 3 (Niche):</strong> 8 companies — lightweight CRM play. Physical/hardware businesses.</li>
+            </ol>
+            <p style="margin-top:12px; color:#888;"><strong>Total Addressable Market:</strong> 46 companies. <strong>Priority targets:</strong> 38 companies with strong WeExpand fit.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CHARTS -->
+<section id="charts">
+    <h2 class="section-title">Data Visualizations</h2>
+    
+    <div class="chart-grid">
+        <div class="chart-card">
+            <h3>Pain Points by Category</h3>
+            <canvas id="painCatChart"></canvas>
+        </div>
+        <div class="chart-card">
+            <h3>Urgency Distribution</h3>
+            <canvas id="urgencyChart"></canvas>
+        </div>
+    </div>
+    
+    <div class="chart-grid">
+        <div class="chart-card">
+            <h3>Companies by Employee Size</h3>
+            <canvas id="empSizeChart"></canvas>
+        </div>
+        <div class="chart-card">
+            <h3>Solution Fit Distribution</h3>
+            <canvas id="fitDistChart"></canvas>
+        </div>
+    </div>
+</section>
+
+<!-- MARKET OPPORTUNITY -->
+<section id="market">
+    <h2 class="section-title">WeExpand Market Opportunity Analysis</h2>
+    
+<div class="insight-card">
+    <h3>Primary Target: Large Exhibition Organizers</h3>
+    <p>Companies like <strong>Informa Markets (3,500 emp), RX Global (3,300), GL events (5,000), Clarion Events (1,100), The Adsale Group (170)</strong> represent the highest-value prospects. They have:</p>
+    <ul>
+        <li>Massive attendee bases (100K-300K+ per event) → enormous data & community value</li>
+        <li>Annual/biennial event cycles → critical year-round engagement gap</li>
+        <li>Large sales teams doing manual B2B outreach → immediate automation ROI</li>
+        <li>Enterprise budgets and existing digital transformation initiatives</li>
+    </ul>
+    <p><strong>WeExpand Value:</strong> Year-round digital community platform, AI-driven exhibitor-visitor matching, automated lead capture, post-event analytics. Enterprise deal size: $100K-$500K+ ARR.</p>
+</div>
+
+<div class="insight-card">
+    <h3>Secondary Target: Niche Conference Organizers</h3>
+    <p><strong>Beacon Events (130), Leader Associates (94), JEC (200), Marintec China (50), ReThink HK (16), BEYOND Expo (17), TOKEN2049 (36), SuperAI (20)</strong> are fast-growing niche players with:</p>
+    <ul>
+        <li>Highly engaged specialist communities → premium community monetization</li>
+        <li>Lean teams (13-200 employees) → extreme need for automation</li>
+        <li>Tech-savvy audiences (crypto, AI, sustainability) → low education barrier</li>
+        <li>Rapidly growing sectors → scaling pressure</li>
+    </ul>
+    <p><strong>WeExpand Value:</strong> AI delegate acquisition, automated sponsor matching, year-round community orchestration, cross-platform engagement. Deal size: $30K-$100K ARR.</p>
+</div>
+
+<div class="insight-card">
+    <h3>Tertiary Target: HK Venue Operators</h3>
+    <p><strong>Kai Tak Sports Park (160), HKCEC (140), AsiaWorld-Expo (110)</strong> are prime candidates for smart venue transformation:</p>
+    <ul>
+        <li>Kai Tak is brand new (opened 2025) → greenfield opportunity with no legacy systems</li>
+        <li>All three venues generate massive visitor data (millions annually) that goes completely uncaptured</li>
+        <li>Zero digital engagement layer for visitors → chatbot, smart wayfinding, personalized recommendations</li>
+        <li>Competing against each other → AI-driven differentiation is a competitive moat</li>
+    </ul>
+    <p><strong>WeExpand Value:</strong> Smart venue AI platform, real-time visitor engagement, automated lead capture for exhibitors, post-event data monetization. Deal size: $50K-$150K ARR.</p>
+</div>
+
+<div class="insight-card">
+    <h3>Platform/Marketplace Opportunity</h3>
+    <p><strong>1000Meetings (17), KEYS (18)</strong> are venue/platform marketplaces where AI matching between event organizers and venues is the core value proposition:</p>
+    <ul>
+        <li>Both have tiny teams (17-18 employees) → automation multiplies output</li>
+        <li>Core business is matching supply-demand → AI matching is natural fit</li>
+        <li>Venue RFP and booking process is entirely manual → 24/7 AI engagement is transformative</li>
+    </ul>
+    <p><strong>WeExpand Value:</strong> AI-driven venue-client matching, automated RFP response, 24/7 chatbot engagement, smart meeting scheduling. Deal size: $20K-$60K ARR.</p>
+</div>
+
+<div class="insight-card insight-card--warning">
+    <h3>Lower Priority: Physical Fabrication & Creative Agencies</h3>
+    <p>Companies like <strong>EventWorks, Milton Exhibits, expomobilia, SYMA, ShowTex, Chunky Onion, Teamrite, Noah Asia</strong> have inherent AI limitations due to physical/hardware business models:</p>
+    <ul>
+        <li>Revenue tied to physical products, labor, or bespoke creative work → limited software monetization</li>
+        <li>WeExpand value is primarily in <strong>client acquisition automation</strong> and <strong>brand building</strong></li>
+        <li>Approach as lightweight CRM/outreach tool rather than full platform transformation</li>
+        <li>Deal size: $5K-$20K ARR — high volume, lower ticket</li>
+    </ul>
+</div>
+
+</section>
+
+<!-- TARGET TIERS -->
+<section id="tiers">
+    <h2 class="section-title">Target Prioritization</h2>
+    
+    <div class="chart-card" style="margin-bottom:24px;">
+        <h3>🎯 Tier 1 — Prime Targets (Fit Score 8-10)</h3>
+        <p style="color:#888;margin-bottom:12px;">Highest WeExpand product-market fit. Immediate outreach priority.</p>
+        <table class="summary-table">
+            <thead><tr><th>#</th><th>Company</th><th>Type</th><th>Employees</th><th>Pain Points</th><th>Fit</th></tr></thead>
+            <tbody>
+        <tr>
+            <td>1</td>
+            <td><a href="aplf.html"><strong>APLF</strong></a></td>
+            <td>Conference/Niche Event Organizer</td>
+            <td>22</td>
+            <td>6 pain points</td>
+            <td><span class="badge badge-high">9/10</span></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><a href="beyond_expo.html"><strong>BEYOND Expo</strong></a></td>
+            <td>Conference/Niche Event Organizer</td>
+            <td>17</td>
+            <td>5 pain points</td>
+            <td><span class="badge badge-high">9/10</span></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><a href="china_international_beauty_expo.html"><strong>China International Beauty Expo</strong></a></td>
+            <td>Conference/Niche Event Organizer</td>
+            <td>31</td>
+            <td>5 pain points</td>
+            <td><span class="badge badge-high">9/10</span></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><a href="clarion_events.html"><strong>Clarion Events</strong></a></td>
+            <td>Large Exhibition Organizer</td>
+            <td>1100</td>
+            <td>6 pain points</td>
+            <td><span class="badge badge-high">9/10</span></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><a href="closerstill_media.html"><strong>CloserStill Media</strong></a></td>
+            <td>Large Exhibition Organizer</td>
+            <td>550</td>
+            <td>5 pain points</td>
+            <td><span class="badge badge-high">9/10</span></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><a href="comasia_limited.html"><strong>Comasia Limited</strong></a></td>
+            <td>Large Exhibition Organizer</td>
+            <td>54</td>
+            <td>5 pain points</td>
+            <td><span class="badge badge-high">9/10</span></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><a href="gl_events.html"><strong>GL events</strong></a></td>
+            <td>Large Exhibition Organizer</td>
+            <td>5000</td>
+            <td>6 pain points</td>
+            <td><span class="badge badge-high">9/10</span></td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><a href="informa_markets.html"><strong>Informa Markets</strong></a></td>
+            <td>Large Exhibition Organizer</td>
+            <td>3500</td>
+            <td>5 pain points</td>
+            <td><span class="badge badge-high">9/10</span></td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><a href="rx_global.html"><strong>RX Global</strong></a></td>
+            <td>Large Exhibition Organizer</td>
+            <td>3300</td>
+            <td>5 pain points</td>
+            <td><span class="badge badge-high">9/10</span></td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><a href="superai.html"><strong>SuperAI</strong></a></td>
+            <td>Conference/Niche Event Organizer</td>
+            <td>20</td>
+            <td>5 pain points</td>
+            <td><span class="badge badge-high">9/10</span></td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td><a href="the_adsale_group.html"><strong>The Adsale Group</strong></a></td>
+            <td>Large Exhibition Organizer</td>
+            <td>170</td>
+            <td>5 pain points</td>
+            <td><span class="badge badge-high">9/10</span></td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td><a href="token2049.html"><strong>TOKEN2049</strong></a></td>
+            <td>Conference/Niche Event Organizer</td>
+            <td>36</td>
+            <td>5 pain points</td>
+            <td><span class="badge badge-high">9/10</span></td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td><a href="1000meetings.html"><strong>1000Meetings</strong></a></td>
+            <td>Platform/Marketplace</td>
+            <td>17</td>
+            <td>6 pain points</td>
+            <td><span class="badge badge-high">8/10</span></td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td><a href="121_group.html"><strong>121 Group</strong></a></td>
+            <td>Conference/Niche Event Organizer</td>
+            <td>50</td>
+            <td>6 pain points</td>
+            <td><span class="badge badge-high">8/10</span></td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td><a href="asiaworld-expo_management_limited.html"><strong>AsiaWorld-Expo Management Limited</strong></a></td>
+            <td>Venue Operator</td>
+            <td>110</td>
+            <td>6 pain points</td>
+            <td><span class="badge badge-high">8/10</span></td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><a href="beacon_events.html"><strong>Beacon Events</strong></a></td>
+            <td>Conference/Niche Event Organizer</td>
+            <td>130</td>
+            <td>6 pain points</td>
+            <td><span class="badge badge-high">8/10</span></td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><a href="hong_kong_convention_and_exhibition_centre_management_limited.html"><strong>Hong Kong Convention and Exhibition Centre (Management) Limited</strong></a></td>
+            <td>Venue Operator</td>
+            <td>140</td>
+            <td>5 pain points</td>
+            <td><span class="badge badge-high">8/10</span></td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td><a href="jec.html"><strong>JEC</strong></a></td>
+            <td>Conference/Niche Event Organizer</td>
+            <td>200</td>
+            <td>4 pain points</td>
+            <td><span class="badge badge-high">8/10</span></td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td><a href="kai_tak_sports_park.html"><strong>Kai Tak Sports Park</strong></a></td>
+            <td>Venue Operator</td>
+            <td>160</td>
+            <td>5 pain points</td>
+            <td><span class="badge badge-high">8/10</span></td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td><a href="keys.html"><strong>KEYS</strong></a></td>
+            <td>Platform/Marketplace</td>
+            <td>18</td>
+            <td>4 pain points</td>
+            <td><span class="badge badge-high">8/10</span></td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td><a href="leader_associates.html"><strong>Leader Associates</strong></a></td>
+            <td>Conference/Niche Event Organizer</td>
+            <td>94</td>
+            <td>4 pain points</td>
+            <td><span class="badge badge-high">8/10</span></td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td><a href="noah_asia_limited_-_marketing_agency.html"><strong>Noah (Asia) Limited - Marketing Agency</strong></a></td>
+            <td>Creative/Marketing Agency</td>
+            <td>11</td>
+            <td>6 pain points</td>
+            <td><span class="badge badge-high">8/10</span></td>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td><a href="rethink_hk.html"><strong>ReThink HK</strong></a></td>
+            <td>Conference/Niche Event Organizer</td>
+            <td>16</td>
+            <td>5 pain points</td>
+            <td><span class="badge badge-high">8/10</span></td>
+        </tr></tbody>
+        </table>
+    </div>
+
+    <div class="chart-card" style="margin-bottom:24px;">
+        <h3>🥈 Tier 2 — Strong Prospects (Fit Score 6-7)</h3>
+        <p style="color:#888;margin-bottom:12px;">Good WeExpand fit. Nurture pipeline, case-study-driven sales.</p>
+        <table class="summary-table">
+            <thead><tr><th>#</th><th>Company</th><th>Type</th><th>Employees</th><th>Pain Points</th><th>Fit</th></tr></thead>
+            <tbody>
+        <tr>
+            <td>1</td>
+            <td><a href="eventist.html"><strong>Eventist</strong></a></td>
+            <td>Creative/Marketing Agency</td>
+            <td>66</td>
+            <td>1 pain points</td>
+            <td><span class="badge badge-high">7/10</span></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><a href="filament_limited.html"><strong>Filament Limited</strong></a></td>
+            <td>Creative/Marketing Agency</td>
+            <td>14</td>
+            <td>4 pain points</td>
+            <td><span class="badge badge-high">7/10</span></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><a href="infocommasia_pte_ltd.html"><strong>InfoCommAsia Pte Ltd</strong></a></td>
+            <td>Conference/Niche Event Organizer</td>
+            <td>13</td>
+            <td>4 pain points</td>
+            <td><span class="badge badge-high">7/10</span></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><a href="marintec_china.html"><strong>Marintec China</strong></a></td>
+            <td>Conference/Niche Event Organizer</td>
+            <td>50</td>
+            <td>4 pain points</td>
+            <td><span class="badge badge-high">7/10</span></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><a href="messe_frankfurt_shanghai_co_ltd.html"><strong>Messe Frankfurt (Shanghai) Co Ltd</strong></a></td>
+            <td>Large Exhibition Organizer</td>
+            <td>91</td>
+            <td>4 pain points</td>
+            <td><span class="badge badge-high">7/10</span></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><a href="oliver_kinross.html"><strong>Oliver Kinross</strong></a></td>
+            <td>Large Exhibition Organizer</td>
+            <td>120</td>
+            <td>4 pain points</td>
+            <td><span class="badge badge-high">7/10</span></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><a href="artcom.html"><strong>Artcom</strong></a></td>
+            <td>Creative/Marketing Agency</td>
+            <td>15</td>
+            <td>5 pain points</td>
+            <td><span class="badge badge-high">6/10</span></td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><a href="branded.html"><strong>Branded</strong></a></td>
+            <td>Conference/Niche Event Organizer</td>
+            <td>47</td>
+            <td>5 pain points</td>
+            <td><span class="badge badge-high">6/10</span></td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><a href="eventworks.html"><strong>EventWorks</strong></a></td>
+            <td>Event Services</td>
+            <td>290</td>
+            <td>5 pain points</td>
+            <td><span class="badge badge-high">6/10</span></td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><a href="fuel.html"><strong>FUEL</strong></a></td>
+            <td>Creative/Marketing Agency</td>
+            <td>170</td>
+            <td>4 pain points</td>
+            <td><span class="badge badge-high">6/10</span></td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td><a href="gl_events_hong_kong.html"><strong>GL events Hong Kong</strong></a></td>
+            <td>Large Exhibition Organizer</td>
+            <td>16</td>
+            <td>4 pain points</td>
+            <td><span class="badge badge-high">6/10</span></td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td><a href="iss-vision_events.html"><strong>ISS-Vision Events</strong></a></td>
+            <td>Event Services</td>
+            <td>21</td>
+            <td>4 pain points</td>
+            <td><span class="badge badge-high">6/10</span></td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td><a href="pyjama.html"><strong>pyjama</strong></a></td>
+            <td>Platform/Marketplace</td>
+            <td>13</td>
+            <td>4 pain points</td>
+            <td><span class="badge badge-high">6/10</span></td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td><a href="royal_plaza_hotel.html"><strong>Royal Plaza Hotel</strong></a></td>
+            <td>Venue Operator</td>
+            <td>210</td>
+            <td>4 pain points</td>
+            <td><span class="badge badge-high">6/10</span></td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td><a href="teamrite_international_limited.html"><strong>Teamrite International Limited</strong></a></td>
+            <td>Creative/Marketing Agency</td>
+            <td>14</td>
+            <td>4 pain points</td>
+            <td><span class="badge badge-high">6/10</span></td>
+        </tr></tbody>
+        </table>
+    </div>
+
+    <div class="chart-card">
+        <h3>🥉 Tier 3 — Niche Plays (Fit Score 0-5)</h3>
+        <p style="color:#888;margin-bottom:12px;">Limited AI alignment. Lightweight CRM/lead-gen tool approach.</p>
+        <table class="summary-table">
+            <thead><tr><th>#</th><th>Company</th><th>Type</th><th>Employees</th><th>Pain Points</th><th>Fit</th></tr></thead>
+            <tbody>
+        <tr>
+            <td>1</td>
+            <td><a href="chunky_onion_productions_limited.html"><strong>Chunky Onion Productions Limited</strong></a></td>
+            <td>Event Production/Fabrication</td>
+            <td>12</td>
+            <td>5 pain points</td>
+            <td><span class="badge badge-high">5/10</span></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><a href="ex-r_international.html"><strong>EX-R International</strong></a></td>
+            <td>Event Services</td>
+            <td>19</td>
+            <td>4 pain points</td>
+            <td><span class="badge badge-high">5/10</span></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><a href="expomobilia_gmbh.html"><strong>expomobilia GmbH</strong></a></td>
+            <td>Event Production/Fabrication</td>
+            <td>110</td>
+            <td>4 pain points</td>
+            <td><span class="badge badge-high">5/10</span></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><a href="milton_exhibits.html"><strong>Milton Exhibits</strong></a></td>
+            <td>Event Production/Fabrication</td>
+            <td>110</td>
+            <td>4 pain points</td>
+            <td><span class="badge badge-high">5/10</span></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><a href="mykar_events.html"><strong>Mykar Events</strong></a></td>
+            <td>Conference/Niche Event Organizer</td>
+            <td>12</td>
+            <td>4 pain points</td>
+            <td><span class="badge badge-high">5/10</span></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><a href="serious_staging.html"><strong>Serious Staging</strong></a></td>
+            <td>Event Production/Fabrication</td>
+            <td>22</td>
+            <td>4 pain points</td>
+            <td><span class="badge badge-high">5/10</span></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><a href="showtex.html"><strong>ShowTex</strong></a></td>
+            <td>Event Production/Fabrication</td>
+            <td>130</td>
+            <td>4 pain points</td>
+            <td><span class="badge badge-high">5/10</span></td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><a href="syma.html"><strong>SYMA</strong></a></td>
+            <td>Event Production/Fabrication</td>
+            <td>93</td>
+            <td>4 pain points</td>
+            <td><span class="badge badge-high">5/10</span></td>
+        </tr></tbody>
+        </table>
+        
+    </div>
+</section>
+
+<!-- ALL COMPANIES -->
+<section id="all">
+    <h2 class="section-title">All 46 Companies — At a Glance</h2>
+    <table class="summary-table">
+        <thead><tr><th>Company</th><th>Employees</th><th>Type</th><th>Pain Points</th><th>Fit Score</th></tr></thead>
+        <tbody>
+        <tr>
+            <td><a href="1000meetings.html">1000Meetings</a></td>
+            <td>17</td>
+            <td>Platform/Marketplace</td>
+            <td>6</td>
+            <td><span class="badge badge-high">8/10</span></td>
+        </tr>
+        <tr>
+            <td><a href="121_group.html">121 Group</a></td>
+            <td>50</td>
+            <td>Conference/Niche Event Organizer</td>
+            <td>6</td>
+            <td><span class="badge badge-high">8/10</span></td>
+        </tr>
+        <tr>
+            <td><a href="aplf.html">APLF</a></td>
+            <td>22</td>
+            <td>Conference/Niche Event Organizer</td>
+            <td>6</td>
+            <td><span class="badge badge-high">9/10</span></td>
+        </tr>
+        <tr>
+            <td><a href="artcom.html">Artcom</a></td>
+            <td>15</td>
+            <td>Creative/Marketing Agency</td>
+            <td>5</td>
+            <td><span class="badge badge-medium">6/10</span></td>
+        </tr>
+        <tr>
+            <td><a href="asiaworld-expo_management_limited.html">AsiaWorld-Expo Management Limited</a></td>
+            <td>110</td>
+            <td>Venue Operator</td>
+            <td>6</td>
+            <td><span class="badge badge-high">8/10</span></td>
+        </tr>
+        <tr>
+            <td><a href="beacon_events.html">Beacon Events</a></td>
+            <td>130</td>
+            <td>Conference/Niche Event Organizer</td>
+            <td>6</td>
+            <td><span class="badge badge-high">8/10</span></td>
+        </tr>
+        <tr>
+            <td><a href="beyond_expo.html">BEYOND Expo</a></td>
+            <td>17</td>
+            <td>Conference/Niche Event Organizer</td>
+            <td>5</td>
+            <td><span class="badge badge-high">9/10</span></td>
+        </tr>
+        <tr>
+            <td><a href="branded.html">Branded</a></td>
+            <td>47</td>
+            <td>Conference/Niche Event Organizer</td>
+            <td>5</td>
+            <td><span class="badge badge-medium">6/10</span></td>
+        </tr>
+        <tr>
+            <td><a href="china_international_beauty_expo.html">China International Beauty Expo</a></td>
+            <td>31</td>
+            <td>Conference/Niche Event Organizer</td>
+            <td>5</td>
+            <td><span class="badge badge-high">9/10</span></td>
+        </tr>
+        <tr>
+            <td><a href="chunky_onion_productions_limited.html">Chunky Onion Productions Limited</a></td>
+            <td>12</td>
+            <td>Event Production/Fabrication</td>
+            <td>5</td>
+            <td><span class="badge badge-medium">5/10</span></td>
+        </tr>
+        <tr>
+            <td><a href="clarion_events.html">Clarion Events</a></td>
+            <td>1100</td>
+            <td>Large Exhibition Organizer</td>
+            <td>6</td>
+            <td><span class="badge badge-high">9/10</span></td>
+        </tr>
+        <tr>
+            <td><a href="closerstill_media.html">CloserStill Media</a></td>
+            <td>550</td>
+            <td>Large Exhibition Organizer</td>
+            <td>5</td>
+            <td><span class="badge badge-high">9/10</span></td>
+        </tr>
+        <tr>
+            <td><a href="comasia_limited.html">Comasia Limited</a></td>
+            <td>54</td>
+            <td>Large Exhibition Organizer</td>
+            <td>5</td>
+            <td><span class="badge badge-high">9/10</span></td>
+        </tr>
+        <tr>
+            <td><a href="eventist.html">Eventist</a></td>
+            <td>66</td>
+            <td>Creative/Marketing Agency</td>
+            <td>1</td>
+            <td><span class="badge badge-high">7/10</span></td>
+        </tr>
+        <tr>
+            <td><a href="eventworks.html">EventWorks</a></td>
+            <td>290</td>
+            <td>Event Services</td>
+            <td>5</td>
+            <td><span class="badge badge-medium">6/10</span></td>
+        </tr>
+        <tr>
+            <td><a href="ex-r_international.html">EX-R International</a></td>
+            <td>19</td>
+            <td>Event Services</td>
+            <td>4</td>
+            <td><span class="badge badge-medium">5/10</span></td>
+        </tr>
+        <tr>
+            <td><a href="expomobilia_gmbh.html">expomobilia GmbH</a></td>
+            <td>110</td>
+            <td>Event Production/Fabrication</td>
+            <td>4</td>
+            <td><span class="badge badge-medium">5/10</span></td>
+        </tr>
+        <tr>
+            <td><a href="filament_limited.html">Filament Limited</a></td>
+            <td>14</td>
+            <td>Creative/Marketing Agency</td>
+            <td>4</td>
+            <td><span class="badge badge-high">7/10</span></td>
+        </tr>
+        <tr>
+            <td><a href="fuel.html">FUEL</a></td>
+            <td>170</td>
+            <td>Creative/Marketing Agency</td>
+            <td>4</td>
+            <td><span class="badge badge-medium">6/10</span></td>
+        </tr>
+        <tr>
+            <td><a href="gl_events.html">GL events</a></td>
+            <td>5000</td>
+            <td>Large Exhibition Organizer</td>
+            <td>6</td>
+            <td><span class="badge badge-high">9/10</span></td>
+        </tr>
+        <tr>
+            <td><a href="gl_events_hong_kong.html">GL events Hong Kong</a></td>
+            <td>16</td>
+            <td>Large Exhibition Organizer</td>
+            <td>4</td>
+            <td><span class="badge badge-medium">6/10</span></td>
+        </tr>
+        <tr>
+            <td><a href="hong_kong_convention_and_exhibition_centre_management_limited.html">Hong Kong Convention and Exhibition Centre (Management) Limited</a></td>
+            <td>140</td>
+            <td>Venue Operator</td>
+            <td>5</td>
+            <td><span class="badge badge-high">8/10</span></td>
+        </tr>
+        <tr>
+            <td><a href="infocommasia_pte_ltd.html">InfoCommAsia Pte Ltd</a></td>
+            <td>13</td>
+            <td>Conference/Niche Event Organizer</td>
+            <td>4</td>
+            <td><span class="badge badge-high">7/10</span></td>
+        </tr>
+        <tr>
+            <td><a href="informa_markets.html">Informa Markets</a></td>
+            <td>3500</td>
+            <td>Large Exhibition Organizer</td>
+            <td>5</td>
+            <td><span class="badge badge-high">9/10</span></td>
+        </tr>
+        <tr>
+            <td><a href="iss-vision_events.html">ISS-Vision Events</a></td>
+            <td>21</td>
+            <td>Event Services</td>
+            <td>4</td>
+            <td><span class="badge badge-medium">6/10</span></td>
+        </tr>
+        <tr>
+            <td><a href="jec.html">JEC</a></td>
+            <td>200</td>
+            <td>Conference/Niche Event Organizer</td>
+            <td>4</td>
+            <td><span class="badge badge-high">8/10</span></td>
+        </tr>
+        <tr>
+            <td><a href="kai_tak_sports_park.html">Kai Tak Sports Park</a></td>
+            <td>160</td>
+            <td>Venue Operator</td>
+            <td>5</td>
+            <td><span class="badge badge-high">8/10</span></td>
+        </tr>
+        <tr>
+            <td><a href="keys.html">KEYS</a></td>
+            <td>18</td>
+            <td>Platform/Marketplace</td>
+            <td>4</td>
+            <td><span class="badge badge-high">8/10</span></td>
+        </tr>
+        <tr>
+            <td><a href="leader_associates.html">Leader Associates</a></td>
+            <td>94</td>
+            <td>Conference/Niche Event Organizer</td>
+            <td>4</td>
+            <td><span class="badge badge-high">8/10</span></td>
+        </tr>
+        <tr>
+            <td><a href="marintec_china.html">Marintec China</a></td>
+            <td>50</td>
+            <td>Conference/Niche Event Organizer</td>
+            <td>4</td>
+            <td><span class="badge badge-high">7/10</span></td>
+        </tr>
+        <tr>
+            <td><a href="messe_frankfurt_shanghai_co_ltd.html">Messe Frankfurt (Shanghai) Co Ltd</a></td>
+            <td>91</td>
+            <td>Large Exhibition Organizer</td>
+            <td>4</td>
+            <td><span class="badge badge-medium">7/10</span></td>
+        </tr>
+        <tr>
+            <td><a href="milton_exhibits.html">Milton Exhibits</a></td>
+            <td>110</td>
+            <td>Event Production/Fabrication</td>
+            <td>4</td>
+            <td><span class="badge badge-medium">5/10</span></td>
+        </tr>
+        <tr>
+            <td><a href="mykar_events.html">Mykar Events</a></td>
+            <td>12</td>
+            <td>Conference/Niche Event Organizer</td>
+            <td>4</td>
+            <td><span class="badge badge-medium">5/10</span></td>
+        </tr>
+        <tr>
+            <td><a href="noah_asia_limited_-_marketing_agency.html">Noah (Asia) Limited - Marketing Agency</a></td>
+            <td>11</td>
+            <td>Creative/Marketing Agency</td>
+            <td>6</td>
+            <td><span class="badge badge-high">8/10</span></td>
+        </tr>
+        <tr>
+            <td><a href="oliver_kinross.html">Oliver Kinross</a></td>
+            <td>120</td>
+            <td>Large Exhibition Organizer</td>
+            <td>4</td>
+            <td><span class="badge badge-high">7/10</span></td>
+        </tr>
+        <tr>
+            <td><a href="pyjama.html">pyjama</a></td>
+            <td>13</td>
+            <td>Platform/Marketplace</td>
+            <td>4</td>
+            <td><span class="badge badge-medium">6/10</span></td>
+        </tr>
+        <tr>
+            <td><a href="rethink_hk.html">ReThink HK</a></td>
+            <td>16</td>
+            <td>Conference/Niche Event Organizer</td>
+            <td>5</td>
+            <td><span class="badge badge-high">8/10</span></td>
+        </tr>
+        <tr>
+            <td><a href="royal_plaza_hotel.html">Royal Plaza Hotel</a></td>
+            <td>210</td>
+            <td>Venue Operator</td>
+            <td>4</td>
+            <td><span class="badge badge-medium">6/10</span></td>
+        </tr>
+        <tr>
+            <td><a href="rx_global.html">RX Global</a></td>
+            <td>3300</td>
+            <td>Large Exhibition Organizer</td>
+            <td>5</td>
+            <td><span class="badge badge-high">9/10</span></td>
+        </tr>
+        <tr>
+            <td><a href="serious_staging.html">Serious Staging</a></td>
+            <td>22</td>
+            <td>Event Production/Fabrication</td>
+            <td>4</td>
+            <td><span class="badge badge-medium">5/10</span></td>
+        </tr>
+        <tr>
+            <td><a href="showtex.html">ShowTex</a></td>
+            <td>130</td>
+            <td>Event Production/Fabrication</td>
+            <td>4</td>
+            <td><span class="badge badge-medium">5/10</span></td>
+        </tr>
+        <tr>
+            <td><a href="superai.html">SuperAI</a></td>
+            <td>20</td>
+            <td>Conference/Niche Event Organizer</td>
+            <td>5</td>
+            <td><span class="badge badge-high">9/10</span></td>
+        </tr>
+        <tr>
+            <td><a href="syma.html">SYMA</a></td>
+            <td>93</td>
+            <td>Event Production/Fabrication</td>
+            <td>4</td>
+            <td><span class="badge badge-medium">5/10</span></td>
+        </tr>
+        <tr>
+            <td><a href="teamrite_international_limited.html">Teamrite International Limited</a></td>
+            <td>14</td>
+            <td>Creative/Marketing Agency</td>
+            <td>4</td>
+            <td><span class="badge badge-medium">6/10</span></td>
+        </tr>
+        <tr>
+            <td><a href="the_adsale_group.html">The Adsale Group</a></td>
+            <td>170</td>
+            <td>Large Exhibition Organizer</td>
+            <td>5</td>
+            <td><span class="badge badge-high">9/10</span></td>
+        </tr>
+        <tr>
+            <td><a href="token2049.html">TOKEN2049</a></td>
+            <td>36</td>
+            <td>Conference/Niche Event Organizer</td>
+            <td>5</td>
+            <td><span class="badge badge-high">9/10</span></td>
+        </tr></tbody>
+    </table>
+</section>
+
+</div>
+</main>
+
+<footer>
+    <div class="container">
+        <p>Market Understanding Project · <a href="index.html">Company Index</a> · Generated 2026-05-29 · WeExpand Agentic AI Solution</p>
+    </div>
+</footer>
+
+<script>
+// Pain Categories Chart
+new Chart(document.getElementById('painCatChart'), {
+    type: 'bar',
+    data: {
+        labels: ["Manual Sales & Client Acquisition", "Other", "No AI & Automation", "Competitive Pressure", "Year-Round Engagement Gap", "No Digital Platform", "Data Monetization Gap", "Revenue Model Risk", "Team Scalability Crisis", "Geographic Concentration", "Operational Risk", "Brand & Marketing Gap"],
+        datasets: [{
+            label: 'Pain Points',
+            data: [42, 32, 13, 13, 12, 11, 11, 10, 9, 9, 5, 3],
+            backgroundColor: ['#e94560','#667eea','#f39c12','#27ae60','#3498db','#9b59b6','#e67e22','#1abc9c','#e74c3c','#2ecc71','#34495e','#95a5a6'],
+            borderRadius: 6,
+            borderSkipped: false,
+        }]
+    },
+    options: {
+        indexAxis: 'y',
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: { x: { beginAtZero: true, ticks: { stepSize: 5 } } }
+    }
+});
+
+// Urgency Chart
+new Chart(document.getElementById('urgencyChart'), {
+    type: 'doughnut',
+    data: {
+        labels: ["Medium", "High", "Low"],
+        datasets: [{
+            data: [101, 64, 5],
+            backgroundColor: ['#e94560','#f39c12','#27ae60'],
+            borderWidth: 2,
+            borderColor: '#fff'
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: { legend: { position: 'bottom' } }
+    }
+});
+
+// Employee Size Chart
+new Chart(document.getElementById('empSizeChart'), {
+    type: 'bar',
+    data: {
+        labels: ["Micro (1-20)", "Small (21-100)", "Medium (101-500)", "Large (501+)"],
+        datasets: [{
+            label: 'Companies',
+            data: [15, 13, 13, 5],
+            backgroundColor: ['#27ae60','#3498db','#f39c12','#e94560'],
+            borderRadius: 8,
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: { y: { beginAtZero: true, ticks: { stepSize: 5 } } }
+    }
+});
+
+// Fit Distribution Chart
+new Chart(document.getElementById('fitDistChart'), {
+    type: 'doughnut',
+    data: {
+        labels: ['High Fit','Medium Fit','Low/N/A'],
+        datasets: [{
+            data: [28,18,0],
+            backgroundColor: ['#27ae60','#f39c12','#95a5a6'],
+            borderWidth: 2,
+            borderColor: '#fff'
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: { legend: { position: 'bottom' } }
+    }
+});
+</script>
+</body>
+</html>

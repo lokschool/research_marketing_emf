@@ -1,0 +1,934 @@
+{
+  "total_companies": 46,
+  "total_employees": 16404,
+  "total_pain_points": 213,
+  "avg_pains_per_company": 4.6,
+  "fit_distribution": {
+    "High": 28,
+    "Medium": 18,
+    "Low/N/A": 0
+  },
+  "urgency_distribution": {
+    "Medium": 101,
+    "High": 64,
+    "Low": 5
+  },
+  "pain_categories": {
+    "Manual Sales & Client Acquisition": 42,
+    "Other": 32,
+    "No AI & Automation": 13,
+    "Competitive Pressure": 13,
+    "Year-Round Engagement Gap": 12,
+    "No Digital Platform": 11,
+    "Data Monetization Gap": 11,
+    "Revenue Model Risk": 10,
+    "Team Scalability Crisis": 9,
+    "Geographic Concentration": 9,
+    "Operational Risk": 5,
+    "Brand & Marketing Gap": 3
+  },
+  "employee_groups": {
+    "Micro (1-20)": 15,
+    "Small (21-100)": 13,
+    "Medium (101-500)": 13,
+    "Large (501+)": 5
+  },
+  "tier1_prime": [
+    {
+      "name": "APLF",
+      "slug": "aplf",
+      "employees": 22,
+      "fit_level": "High",
+      "fit_score": 9,
+      "pain_count": 6,
+      "type": "Conference/Niche Event Organizer"
+    },
+    {
+      "name": "BEYOND Expo",
+      "slug": "beyond_expo",
+      "employees": 17,
+      "fit_level": "High",
+      "fit_score": 9,
+      "pain_count": 5,
+      "type": "Conference/Niche Event Organizer"
+    },
+    {
+      "name": "China International Beauty Expo",
+      "slug": "china_international_beauty_expo",
+      "employees": 31,
+      "fit_level": "High",
+      "fit_score": 9,
+      "pain_count": 5,
+      "type": "Conference/Niche Event Organizer"
+    },
+    {
+      "name": "Clarion Events",
+      "slug": "clarion_events",
+      "employees": 1100,
+      "fit_level": "High",
+      "fit_score": 9,
+      "pain_count": 6,
+      "type": "Large Exhibition Organizer"
+    },
+    {
+      "name": "CloserStill Media",
+      "slug": "closerstill_media",
+      "employees": 550,
+      "fit_level": "High",
+      "fit_score": 9,
+      "pain_count": 5,
+      "type": "Large Exhibition Organizer"
+    },
+    {
+      "name": "Comasia Limited",
+      "slug": "comasia_limited",
+      "employees": 54,
+      "fit_level": "High",
+      "fit_score": 9,
+      "pain_count": 5,
+      "type": "Large Exhibition Organizer"
+    },
+    {
+      "name": "GL events",
+      "slug": "gl_events",
+      "employees": 5000,
+      "fit_level": "High",
+      "fit_score": 9,
+      "pain_count": 6,
+      "type": "Large Exhibition Organizer"
+    },
+    {
+      "name": "Informa Markets",
+      "slug": "informa_markets",
+      "employees": 3500,
+      "fit_level": "High",
+      "fit_score": 9,
+      "pain_count": 5,
+      "type": "Large Exhibition Organizer"
+    },
+    {
+      "name": "RX Global",
+      "slug": "rx_global",
+      "employees": 3300,
+      "fit_level": "High",
+      "fit_score": 9,
+      "pain_count": 5,
+      "type": "Large Exhibition Organizer"
+    },
+    {
+      "name": "SuperAI",
+      "slug": "superai",
+      "employees": 20,
+      "fit_level": "High",
+      "fit_score": 9,
+      "pain_count": 5,
+      "type": "Conference/Niche Event Organizer"
+    },
+    {
+      "name": "The Adsale Group",
+      "slug": "the_adsale_group",
+      "employees": 170,
+      "fit_level": "High",
+      "fit_score": 9,
+      "pain_count": 5,
+      "type": "Large Exhibition Organizer"
+    },
+    {
+      "name": "TOKEN2049",
+      "slug": "token2049",
+      "employees": 36,
+      "fit_level": "High",
+      "fit_score": 9,
+      "pain_count": 5,
+      "type": "Conference/Niche Event Organizer"
+    },
+    {
+      "name": "1000Meetings",
+      "slug": "1000meetings",
+      "employees": 17,
+      "fit_level": "High",
+      "fit_score": 8,
+      "pain_count": 6,
+      "type": "Platform/Marketplace"
+    },
+    {
+      "name": "121 Group",
+      "slug": "121_group",
+      "employees": 50,
+      "fit_level": "High",
+      "fit_score": 8,
+      "pain_count": 6,
+      "type": "Conference/Niche Event Organizer"
+    },
+    {
+      "name": "AsiaWorld-Expo Management Limited",
+      "slug": "asiaworld-expo_management_limited",
+      "employees": 110,
+      "fit_level": "High",
+      "fit_score": 8,
+      "pain_count": 6,
+      "type": "Venue Operator"
+    },
+    {
+      "name": "Beacon Events",
+      "slug": "beacon_events",
+      "employees": 130,
+      "fit_level": "High",
+      "fit_score": 8,
+      "pain_count": 6,
+      "type": "Conference/Niche Event Organizer"
+    },
+    {
+      "name": "Hong Kong Convention and Exhibition Centre (Management) Limited",
+      "slug": "hong_kong_convention_and_exhibition_centre_management_limited",
+      "employees": 140,
+      "fit_level": "High",
+      "fit_score": 8,
+      "pain_count": 5,
+      "type": "Venue Operator"
+    },
+    {
+      "name": "JEC",
+      "slug": "jec",
+      "employees": 200,
+      "fit_level": "High",
+      "fit_score": 8,
+      "pain_count": 4,
+      "type": "Conference/Niche Event Organizer"
+    },
+    {
+      "name": "Kai Tak Sports Park",
+      "slug": "kai_tak_sports_park",
+      "employees": 160,
+      "fit_level": "High",
+      "fit_score": 8,
+      "pain_count": 5,
+      "type": "Venue Operator"
+    },
+    {
+      "name": "KEYS",
+      "slug": "keys",
+      "employees": 18,
+      "fit_level": "High",
+      "fit_score": 8,
+      "pain_count": 4,
+      "type": "Platform/Marketplace"
+    },
+    {
+      "name": "Leader Associates",
+      "slug": "leader_associates",
+      "employees": 94,
+      "fit_level": "High",
+      "fit_score": 8,
+      "pain_count": 4,
+      "type": "Conference/Niche Event Organizer"
+    },
+    {
+      "name": "Noah (Asia) Limited - Marketing Agency",
+      "slug": "noah_asia_limited_-_marketing_agency",
+      "employees": 11,
+      "fit_level": "High",
+      "fit_score": 8,
+      "pain_count": 6,
+      "type": "Creative/Marketing Agency"
+    },
+    {
+      "name": "ReThink HK",
+      "slug": "rethink_hk",
+      "employees": 16,
+      "fit_level": "High",
+      "fit_score": 8,
+      "pain_count": 5,
+      "type": "Conference/Niche Event Organizer"
+    }
+  ],
+  "tier2_strong": [
+    {
+      "name": "Eventist",
+      "slug": "eventist",
+      "employees": 66,
+      "fit_level": "High",
+      "fit_score": 7,
+      "pain_count": 1,
+      "type": "Creative/Marketing Agency"
+    },
+    {
+      "name": "Filament Limited",
+      "slug": "filament_limited",
+      "employees": 14,
+      "fit_level": "High",
+      "fit_score": 7,
+      "pain_count": 4,
+      "type": "Creative/Marketing Agency"
+    },
+    {
+      "name": "InfoCommAsia Pte Ltd",
+      "slug": "infocommasia_pte_ltd",
+      "employees": 13,
+      "fit_level": "High",
+      "fit_score": 7,
+      "pain_count": 4,
+      "type": "Conference/Niche Event Organizer"
+    },
+    {
+      "name": "Marintec China",
+      "slug": "marintec_china",
+      "employees": 50,
+      "fit_level": "High",
+      "fit_score": 7,
+      "pain_count": 4,
+      "type": "Conference/Niche Event Organizer"
+    },
+    {
+      "name": "Messe Frankfurt (Shanghai) Co Ltd",
+      "slug": "messe_frankfurt_shanghai_co_ltd",
+      "employees": 91,
+      "fit_level": "Medium",
+      "fit_score": 7,
+      "pain_count": 4,
+      "type": "Large Exhibition Organizer"
+    },
+    {
+      "name": "Oliver Kinross",
+      "slug": "oliver_kinross",
+      "employees": 120,
+      "fit_level": "High",
+      "fit_score": 7,
+      "pain_count": 4,
+      "type": "Large Exhibition Organizer"
+    },
+    {
+      "name": "Artcom",
+      "slug": "artcom",
+      "employees": 15,
+      "fit_level": "Medium",
+      "fit_score": 6,
+      "pain_count": 5,
+      "type": "Creative/Marketing Agency"
+    },
+    {
+      "name": "Branded",
+      "slug": "branded",
+      "employees": 47,
+      "fit_level": "Medium",
+      "fit_score": 6,
+      "pain_count": 5,
+      "type": "Conference/Niche Event Organizer"
+    },
+    {
+      "name": "EventWorks",
+      "slug": "eventworks",
+      "employees": 290,
+      "fit_level": "Medium",
+      "fit_score": 6,
+      "pain_count": 5,
+      "type": "Event Services"
+    },
+    {
+      "name": "FUEL",
+      "slug": "fuel",
+      "employees": 170,
+      "fit_level": "Medium",
+      "fit_score": 6,
+      "pain_count": 4,
+      "type": "Creative/Marketing Agency"
+    },
+    {
+      "name": "GL events Hong Kong",
+      "slug": "gl_events_hong_kong",
+      "employees": 16,
+      "fit_level": "Medium",
+      "fit_score": 6,
+      "pain_count": 4,
+      "type": "Large Exhibition Organizer"
+    },
+    {
+      "name": "ISS-Vision Events",
+      "slug": "iss-vision_events",
+      "employees": 21,
+      "fit_level": "Medium",
+      "fit_score": 6,
+      "pain_count": 4,
+      "type": "Event Services"
+    },
+    {
+      "name": "pyjama",
+      "slug": "pyjama",
+      "employees": 13,
+      "fit_level": "Medium",
+      "fit_score": 6,
+      "pain_count": 4,
+      "type": "Platform/Marketplace"
+    },
+    {
+      "name": "Royal Plaza Hotel",
+      "slug": "royal_plaza_hotel",
+      "employees": 210,
+      "fit_level": "Medium",
+      "fit_score": 6,
+      "pain_count": 4,
+      "type": "Venue Operator"
+    },
+    {
+      "name": "Teamrite International Limited",
+      "slug": "teamrite_international_limited",
+      "employees": 14,
+      "fit_level": "Medium",
+      "fit_score": 6,
+      "pain_count": 4,
+      "type": "Creative/Marketing Agency"
+    }
+  ],
+  "tier3_niche": [
+    {
+      "name": "Chunky Onion Productions Limited",
+      "slug": "chunky_onion_productions_limited",
+      "employees": 12,
+      "fit_level": "Medium",
+      "fit_score": 5,
+      "pain_count": 5,
+      "type": "Event Production/Fabrication"
+    },
+    {
+      "name": "EX-R International",
+      "slug": "ex-r_international",
+      "employees": 19,
+      "fit_level": "Medium",
+      "fit_score": 5,
+      "pain_count": 4,
+      "type": "Event Services"
+    },
+    {
+      "name": "expomobilia GmbH",
+      "slug": "expomobilia_gmbh",
+      "employees": 110,
+      "fit_level": "Medium",
+      "fit_score": 5,
+      "pain_count": 4,
+      "type": "Event Production/Fabrication"
+    },
+    {
+      "name": "Milton Exhibits",
+      "slug": "milton_exhibits",
+      "employees": 110,
+      "fit_level": "Medium",
+      "fit_score": 5,
+      "pain_count": 4,
+      "type": "Event Production/Fabrication"
+    },
+    {
+      "name": "Mykar Events",
+      "slug": "mykar_events",
+      "employees": 12,
+      "fit_level": "Medium",
+      "fit_score": 5,
+      "pain_count": 4,
+      "type": "Conference/Niche Event Organizer"
+    },
+    {
+      "name": "Serious Staging",
+      "slug": "serious_staging",
+      "employees": 22,
+      "fit_level": "Medium",
+      "fit_score": 5,
+      "pain_count": 4,
+      "type": "Event Production/Fabrication"
+    },
+    {
+      "name": "ShowTex",
+      "slug": "showtex",
+      "employees": 130,
+      "fit_level": "Medium",
+      "fit_score": 5,
+      "pain_count": 4,
+      "type": "Event Production/Fabrication"
+    },
+    {
+      "name": "SYMA",
+      "slug": "syma",
+      "employees": 93,
+      "fit_level": "Medium",
+      "fit_score": 5,
+      "pain_count": 4,
+      "type": "Event Production/Fabrication"
+    }
+  ],
+  "top_pains": [
+    {
+      "company": "1000Meetings",
+      "slug": "1000meetings",
+      "count": 6,
+      "fit": "High"
+    },
+    {
+      "company": "121 Group",
+      "slug": "121_group",
+      "count": 6,
+      "fit": "High"
+    },
+    {
+      "company": "APLF",
+      "slug": "aplf",
+      "count": 6,
+      "fit": "High"
+    },
+    {
+      "company": "AsiaWorld-Expo Management Limited",
+      "slug": "asiaworld-expo_management_limited",
+      "count": 6,
+      "fit": "High"
+    },
+    {
+      "company": "Beacon Events",
+      "slug": "beacon_events",
+      "count": 6,
+      "fit": "High"
+    },
+    {
+      "company": "Clarion Events",
+      "slug": "clarion_events",
+      "count": 6,
+      "fit": "High"
+    },
+    {
+      "company": "GL events",
+      "slug": "gl_events",
+      "count": 6,
+      "fit": "High"
+    },
+    {
+      "company": "Noah (Asia) Limited - Marketing Agency",
+      "slug": "noah_asia_limited_-_marketing_agency",
+      "count": 6,
+      "fit": "High"
+    },
+    {
+      "company": "Artcom",
+      "slug": "artcom",
+      "count": 5,
+      "fit": "Medium"
+    },
+    {
+      "company": "BEYOND Expo",
+      "slug": "beyond_expo",
+      "count": 5,
+      "fit": "High"
+    }
+  ],
+  "companies": [
+    {
+      "name": "1000Meetings",
+      "slug": "1000meetings",
+      "employees": 17,
+      "fit_level": "High",
+      "fit_score": 8,
+      "pain_count": 6,
+      "type": "Platform/Marketplace"
+    },
+    {
+      "name": "121 Group",
+      "slug": "121_group",
+      "employees": 50,
+      "fit_level": "High",
+      "fit_score": 8,
+      "pain_count": 6,
+      "type": "Conference/Niche Event Organizer"
+    },
+    {
+      "name": "APLF",
+      "slug": "aplf",
+      "employees": 22,
+      "fit_level": "High",
+      "fit_score": 9,
+      "pain_count": 6,
+      "type": "Conference/Niche Event Organizer"
+    },
+    {
+      "name": "Artcom",
+      "slug": "artcom",
+      "employees": 15,
+      "fit_level": "Medium",
+      "fit_score": 6,
+      "pain_count": 5,
+      "type": "Creative/Marketing Agency"
+    },
+    {
+      "name": "AsiaWorld-Expo Management Limited",
+      "slug": "asiaworld-expo_management_limited",
+      "employees": 110,
+      "fit_level": "High",
+      "fit_score": 8,
+      "pain_count": 6,
+      "type": "Venue Operator"
+    },
+    {
+      "name": "Beacon Events",
+      "slug": "beacon_events",
+      "employees": 130,
+      "fit_level": "High",
+      "fit_score": 8,
+      "pain_count": 6,
+      "type": "Conference/Niche Event Organizer"
+    },
+    {
+      "name": "BEYOND Expo",
+      "slug": "beyond_expo",
+      "employees": 17,
+      "fit_level": "High",
+      "fit_score": 9,
+      "pain_count": 5,
+      "type": "Conference/Niche Event Organizer"
+    },
+    {
+      "name": "Branded",
+      "slug": "branded",
+      "employees": 47,
+      "fit_level": "Medium",
+      "fit_score": 6,
+      "pain_count": 5,
+      "type": "Conference/Niche Event Organizer"
+    },
+    {
+      "name": "China International Beauty Expo",
+      "slug": "china_international_beauty_expo",
+      "employees": 31,
+      "fit_level": "High",
+      "fit_score": 9,
+      "pain_count": 5,
+      "type": "Conference/Niche Event Organizer"
+    },
+    {
+      "name": "Chunky Onion Productions Limited",
+      "slug": "chunky_onion_productions_limited",
+      "employees": 12,
+      "fit_level": "Medium",
+      "fit_score": 5,
+      "pain_count": 5,
+      "type": "Event Production/Fabrication"
+    },
+    {
+      "name": "Clarion Events",
+      "slug": "clarion_events",
+      "employees": 1100,
+      "fit_level": "High",
+      "fit_score": 9,
+      "pain_count": 6,
+      "type": "Large Exhibition Organizer"
+    },
+    {
+      "name": "CloserStill Media",
+      "slug": "closerstill_media",
+      "employees": 550,
+      "fit_level": "High",
+      "fit_score": 9,
+      "pain_count": 5,
+      "type": "Large Exhibition Organizer"
+    },
+    {
+      "name": "Comasia Limited",
+      "slug": "comasia_limited",
+      "employees": 54,
+      "fit_level": "High",
+      "fit_score": 9,
+      "pain_count": 5,
+      "type": "Large Exhibition Organizer"
+    },
+    {
+      "name": "Eventist",
+      "slug": "eventist",
+      "employees": 66,
+      "fit_level": "High",
+      "fit_score": 7,
+      "pain_count": 1,
+      "type": "Creative/Marketing Agency"
+    },
+    {
+      "name": "EventWorks",
+      "slug": "eventworks",
+      "employees": 290,
+      "fit_level": "Medium",
+      "fit_score": 6,
+      "pain_count": 5,
+      "type": "Event Services"
+    },
+    {
+      "name": "EX-R International",
+      "slug": "ex-r_international",
+      "employees": 19,
+      "fit_level": "Medium",
+      "fit_score": 5,
+      "pain_count": 4,
+      "type": "Event Services"
+    },
+    {
+      "name": "expomobilia GmbH",
+      "slug": "expomobilia_gmbh",
+      "employees": 110,
+      "fit_level": "Medium",
+      "fit_score": 5,
+      "pain_count": 4,
+      "type": "Event Production/Fabrication"
+    },
+    {
+      "name": "Filament Limited",
+      "slug": "filament_limited",
+      "employees": 14,
+      "fit_level": "High",
+      "fit_score": 7,
+      "pain_count": 4,
+      "type": "Creative/Marketing Agency"
+    },
+    {
+      "name": "FUEL",
+      "slug": "fuel",
+      "employees": 170,
+      "fit_level": "Medium",
+      "fit_score": 6,
+      "pain_count": 4,
+      "type": "Creative/Marketing Agency"
+    },
+    {
+      "name": "GL events",
+      "slug": "gl_events",
+      "employees": 5000,
+      "fit_level": "High",
+      "fit_score": 9,
+      "pain_count": 6,
+      "type": "Large Exhibition Organizer"
+    },
+    {
+      "name": "GL events Hong Kong",
+      "slug": "gl_events_hong_kong",
+      "employees": 16,
+      "fit_level": "Medium",
+      "fit_score": 6,
+      "pain_count": 4,
+      "type": "Large Exhibition Organizer"
+    },
+    {
+      "name": "Hong Kong Convention and Exhibition Centre (Management) Limited",
+      "slug": "hong_kong_convention_and_exhibition_centre_management_limited",
+      "employees": 140,
+      "fit_level": "High",
+      "fit_score": 8,
+      "pain_count": 5,
+      "type": "Venue Operator"
+    },
+    {
+      "name": "InfoCommAsia Pte Ltd",
+      "slug": "infocommasia_pte_ltd",
+      "employees": 13,
+      "fit_level": "High",
+      "fit_score": 7,
+      "pain_count": 4,
+      "type": "Conference/Niche Event Organizer"
+    },
+    {
+      "name": "Informa Markets",
+      "slug": "informa_markets",
+      "employees": 3500,
+      "fit_level": "High",
+      "fit_score": 9,
+      "pain_count": 5,
+      "type": "Large Exhibition Organizer"
+    },
+    {
+      "name": "ISS-Vision Events",
+      "slug": "iss-vision_events",
+      "employees": 21,
+      "fit_level": "Medium",
+      "fit_score": 6,
+      "pain_count": 4,
+      "type": "Event Services"
+    },
+    {
+      "name": "JEC",
+      "slug": "jec",
+      "employees": 200,
+      "fit_level": "High",
+      "fit_score": 8,
+      "pain_count": 4,
+      "type": "Conference/Niche Event Organizer"
+    },
+    {
+      "name": "Kai Tak Sports Park",
+      "slug": "kai_tak_sports_park",
+      "employees": 160,
+      "fit_level": "High",
+      "fit_score": 8,
+      "pain_count": 5,
+      "type": "Venue Operator"
+    },
+    {
+      "name": "KEYS",
+      "slug": "keys",
+      "employees": 18,
+      "fit_level": "High",
+      "fit_score": 8,
+      "pain_count": 4,
+      "type": "Platform/Marketplace"
+    },
+    {
+      "name": "Leader Associates",
+      "slug": "leader_associates",
+      "employees": 94,
+      "fit_level": "High",
+      "fit_score": 8,
+      "pain_count": 4,
+      "type": "Conference/Niche Event Organizer"
+    },
+    {
+      "name": "Marintec China",
+      "slug": "marintec_china",
+      "employees": 50,
+      "fit_level": "High",
+      "fit_score": 7,
+      "pain_count": 4,
+      "type": "Conference/Niche Event Organizer"
+    },
+    {
+      "name": "Messe Frankfurt (Shanghai) Co Ltd",
+      "slug": "messe_frankfurt_shanghai_co_ltd",
+      "employees": 91,
+      "fit_level": "Medium",
+      "fit_score": 7,
+      "pain_count": 4,
+      "type": "Large Exhibition Organizer"
+    },
+    {
+      "name": "Milton Exhibits",
+      "slug": "milton_exhibits",
+      "employees": 110,
+      "fit_level": "Medium",
+      "fit_score": 5,
+      "pain_count": 4,
+      "type": "Event Production/Fabrication"
+    },
+    {
+      "name": "Mykar Events",
+      "slug": "mykar_events",
+      "employees": 12,
+      "fit_level": "Medium",
+      "fit_score": 5,
+      "pain_count": 4,
+      "type": "Conference/Niche Event Organizer"
+    },
+    {
+      "name": "Noah (Asia) Limited - Marketing Agency",
+      "slug": "noah_asia_limited_-_marketing_agency",
+      "employees": 11,
+      "fit_level": "High",
+      "fit_score": 8,
+      "pain_count": 6,
+      "type": "Creative/Marketing Agency"
+    },
+    {
+      "name": "Oliver Kinross",
+      "slug": "oliver_kinross",
+      "employees": 120,
+      "fit_level": "High",
+      "fit_score": 7,
+      "pain_count": 4,
+      "type": "Large Exhibition Organizer"
+    },
+    {
+      "name": "pyjama",
+      "slug": "pyjama",
+      "employees": 13,
+      "fit_level": "Medium",
+      "fit_score": 6,
+      "pain_count": 4,
+      "type": "Platform/Marketplace"
+    },
+    {
+      "name": "ReThink HK",
+      "slug": "rethink_hk",
+      "employees": 16,
+      "fit_level": "High",
+      "fit_score": 8,
+      "pain_count": 5,
+      "type": "Conference/Niche Event Organizer"
+    },
+    {
+      "name": "Royal Plaza Hotel",
+      "slug": "royal_plaza_hotel",
+      "employees": 210,
+      "fit_level": "Medium",
+      "fit_score": 6,
+      "pain_count": 4,
+      "type": "Venue Operator"
+    },
+    {
+      "name": "RX Global",
+      "slug": "rx_global",
+      "employees": 3300,
+      "fit_level": "High",
+      "fit_score": 9,
+      "pain_count": 5,
+      "type": "Large Exhibition Organizer"
+    },
+    {
+      "name": "Serious Staging",
+      "slug": "serious_staging",
+      "employees": 22,
+      "fit_level": "Medium",
+      "fit_score": 5,
+      "pain_count": 4,
+      "type": "Event Production/Fabrication"
+    },
+    {
+      "name": "ShowTex",
+      "slug": "showtex",
+      "employees": 130,
+      "fit_level": "Medium",
+      "fit_score": 5,
+      "pain_count": 4,
+      "type": "Event Production/Fabrication"
+    },
+    {
+      "name": "SuperAI",
+      "slug": "superai",
+      "employees": 20,
+      "fit_level": "High",
+      "fit_score": 9,
+      "pain_count": 5,
+      "type": "Conference/Niche Event Organizer"
+    },
+    {
+      "name": "SYMA",
+      "slug": "syma",
+      "employees": 93,
+      "fit_level": "Medium",
+      "fit_score": 5,
+      "pain_count": 4,
+      "type": "Event Production/Fabrication"
+    },
+    {
+      "name": "Teamrite International Limited",
+      "slug": "teamrite_international_limited",
+      "employees": 14,
+      "fit_level": "Medium",
+      "fit_score": 6,
+      "pain_count": 4,
+      "type": "Creative/Marketing Agency"
+    },
+    {
+      "name": "The Adsale Group",
+      "slug": "the_adsale_group",
+      "employees": 170,
+      "fit_level": "High",
+      "fit_score": 9,
+      "pain_count": 5,
+      "type": "Large Exhibition Organizer"
+    },
+    {
+      "name": "TOKEN2049",
+      "slug": "token2049",
+      "employees": 36,
+      "fit_level": "High",
+      "fit_score": 9,
+      "pain_count": 5,
+      "type": "Conference/Niche Event Organizer"
+    }
+  ]
+}
