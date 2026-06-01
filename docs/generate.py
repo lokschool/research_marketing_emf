@@ -113,39 +113,58 @@ def extract_event_items(text):
     return items
 
 def extract_pain_points(pain_text):
-    """Extract individual pain points from various formats"""
+    """Extract individual pain points from various formats including phased structure."""
     points = []
     
-    # Try ### Pain Point X: format first
+    # Try #### Pain Point X: format (new phased structure)
+    current_phase = ""
     current = None
     for line in pain_text.split("\n"):
         stripped = line.strip()
-        if stripped.startswith("### Pain Point"):
+        
+        # Phase headers
+        if stripped.startswith("### Before") or stripped.startswith("### During") or stripped.startswith("### After"):
+            phase_map = {"Before": "BEFORE", "During": "DURING", "After": "AFTER"}
+            for k, v in phase_map.items():
+                if k in stripped:
+                    current_phase = v
+                    break
+        
+        # Pain point headers (#### level)
+        if stripped.startswith("#### Pain Point"):
+            if current:
+                points.append(current)
+            title = stripped.replace("#### ", "").strip()
+            current = {"title": title, "evidence": "", "impact": "", "urgency": "", "phase": current_phase}
+        elif stripped.startswith("### Pain Point"):
             if current:
                 points.append(current)
             title = stripped.replace("### ", "").strip()
-            current = {"title": title, "evidence": "", "impact": "", "urgency": ""}
+            current = {"title": title, "evidence": "", "impact": "", "urgency": "", "phase": current_phase}
         elif current:
-            if "**Evidence:**" in stripped or "**Evidence" in stripped or stripped.startswith("Evidence:"):
-                for sep in ["**Evidence:**", "**Evidence", "Evidence:"]:
+            if "**Evidence:**" in stripped:
+                for sep in ["**Evidence:**", "**Evidence"]:
                     if sep in stripped:
                         current["evidence"] = stripped.split(sep, 1)[1].strip()
                         break
-            elif "**Impact:**" in stripped or "**Impact" in stripped or stripped.startswith("Impact:"):
-                for sep in ["**Impact:**", "**Impact", "Impact:"]:
+            elif "**Impact:**" in stripped:
+                for sep in ["**Impact:**", "**Impact"]:
                     if sep in stripped:
                         current["impact"] = stripped.split(sep, 1)[1].strip()
                         break
-            elif "**Urgency:**" in stripped or "**Urgency" in stripped or stripped.startswith("Urgency:"):
-                for sep in ["**Urgency:**", "**Urgency", "Urgency:"]:
+            elif "**Urgency:**" in stripped:
+                for sep in ["**Urgency:**", "**Urgency"]:
                     if sep in stripped:
-                        current["urgency"] = stripped.split(sep, 1)[1].strip()
+                        raw = stripped.split(sep, 1)[1].strip()
+                        # Clean emoji
+                        raw = raw.replace("🔴", "").replace("🟡", "").replace("🟢", "").strip()
+                        current["urgency"] = raw
                         break
     
     if current:
         points.append(current)
     
-    # If no points found, try numbered list format: "1. **Title** — description. **Urgency: High.**"
+    # If no points found, try numbered list format
     if not points:
         for line in pain_text.split("\n"):
             stripped = line.strip()
@@ -154,7 +173,7 @@ def extract_pain_points(pain_text):
                 title = match.group(1).strip()
                 evidence = match.group(2).strip()
                 urgency = match.group(3).strip() if match.group(3) else "Medium"
-                points.append({"title": title, "evidence": evidence, "impact": "", "urgency": urgency})
+                points.append({"title": title, "evidence": evidence, "impact": "", "urgency": urgency, "phase": ""})
     
     return points
 
@@ -265,7 +284,7 @@ def md_to_html(text):
     return "\n".join(result)
 
 
-def generate_company_html(company, searched_path, report_path):
+def generate_company_html(company, searched_path, report_path, tm_data=None):
     """Generate HTML for a single company"""
     
     # Read searched file
@@ -308,10 +327,17 @@ def generate_company_html(company, searched_path, report_path):
     evidence_table = searched_sections.get("Data Evidence List", "")
     evidence_rows = extract_table_rows(evidence_table)
     
-    # Pain points - try multiple section header formats
+    # Pain points - try multiple section header formats (including phased header)
     pain_text = (report_sections.get("2. Pain Point Analysis", "") or 
+                 report_sections.get("2. Pain Point Analysis — By Event Phase", "") or
                  report_sections.get("Pain Points", "") or
-                 report_sections.get("Pain Point Analysis", ""))
+                 report_sections.get("Pain Point Analysis", "") or "")
+    # Also try partial match
+    if not pain_text:
+        for key in report_sections:
+            if "Pain Point Analysis" in key or "Pain Points" in key:
+                pain_text = report_sections[key]
+                break
     pain_points = extract_pain_points(pain_text)
     
     # Solution fit
@@ -501,7 +527,21 @@ def generate_company_html(company, searched_path, report_path):
 """
 
     if pain_points:
+        current_phase = ""
         for i, pp in enumerate(pain_points, 1):
+            phase_label = ""
+            if pp.get("phase"):
+                if pp["phase"] != current_phase:
+                    current_phase = pp["phase"]
+                    phase_emoji = {"BEFORE": "📋", "DURING": "🎯", "AFTER": "📊"}
+                    phase_name = {"BEFORE": "Before Event — Planning & Sales", "DURING": "During Event — Execution & Engagement", "AFTER": "After Event — Follow-up & Data"}
+                    em = phase_emoji.get(current_phase, "")
+                    pn = phase_name.get(current_phase, current_phase)
+                    html_content += f"""
+    <div style="margin-top:20px;margin-bottom:4px;padding:8px 16px;background:linear-gradient(135deg,#f0f4ff,#e8f0fe);border-radius:8px;font-weight:700;font-size:0.85rem;color:#0f3460;">
+        {em} {pn}
+    </div>
+"""
             html_content += f"""
     <div class="card pain-point">
         <h4>#{i}: {html_escape(pp['title'])}</h4>
@@ -981,14 +1021,15 @@ def generate_summary_data(companies_data):
         if rp.exists():
             with open(rp) as f:
                 rtext = f.read()
-            # Count urgencies
+            # Count urgencies (handle both ### and #### pain point formats)
             for m in re.finditer(r'\*\*Urgency:\*\*\s*(.+?)(?:\s*[—\-–]|\s*\n|\s*\.)', rtext):
                 u = m.group(1).strip()
+                u = u.replace("🔴", "").replace("🟡", "").replace("🟢", "").strip()
                 if "High" in u: urgency_counts["High"] += 1
                 elif "Medium" in u: urgency_counts["Medium"] += 1
                 elif "Low" in u: urgency_counts["Low"] += 1
-            # Categorize pain points
-            for m in re.finditer(r'### Pain Point \d+:\s*(.+)', rtext):
+            # Categorize pain points (handle #### Pain Point B1: format)
+            for m in re.finditer(r'#{3,4}\s*Pain Point\s*[A-Z]?\d*:\s*(.+)', rtext):
                 title = m.group(1).lower()
                 matched = False
                 for cat, keywords in pain_categories.items():
@@ -1036,6 +1077,16 @@ def main():
     
     print(f"Found {len(companies)} companies in CSV")
     
+    # Load teammate collaboration data
+    teammate_data = {}
+    try:
+        import json
+        with open(WEBSITE_DIR / "merged_data.json") as f:
+            md = json.load(f)
+        for c in md.get("companies", []):
+            teammate_data[c["name"].lower()] = c
+    except: pass
+    
     # Generate each company page
     results = []
     for i, company in enumerate(companies):
@@ -1048,7 +1099,7 @@ def main():
         report_path = find_file(REPORT_DIR, name, "_report.md")
         
         try:
-            result = generate_company_html(company, searched_path, report_path)
+            result = generate_company_html(company, searched_path, report_path, teammate_data.get(name.lower()))
             results.append(result)
             print(f"  [{i+1}/{len(companies)}] Generated: {name}")
         except Exception as e:

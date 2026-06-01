@@ -1,0 +1,1157 @@
+{
+  "total": 48,
+  "companies": [
+    {
+      "name": "1000Meetings",
+      "slug": "1000meetings",
+      "employees": 17,
+      "fit_score": 8,
+      "fit_level": "High",
+      "pain_count": 6,
+      "type": "Platform/Marketplace",
+      "source": "me"
+    },
+    {
+      "name": "121 Group",
+      "slug": "121_group",
+      "employees": 50,
+      "fit_score": 8,
+      "fit_level": "High",
+      "pain_count": 6,
+      "type": "Conference/Niche Event Organizer",
+      "source": "me"
+    },
+    {
+      "name": "APLF",
+      "slug": "aplf",
+      "employees": 22,
+      "fit_score": 9,
+      "fit_level": "High",
+      "pain_count": 6,
+      "type": "Conference/Niche Event Organizer",
+      "source": "me"
+    },
+    {
+      "name": "Artcom",
+      "slug": "artcom",
+      "employees": 15,
+      "fit_score": 6,
+      "fit_level": "Medium",
+      "pain_count": 5,
+      "type": "Creative/Marketing Agency",
+      "source": "me"
+    },
+    {
+      "name": "AsiaWorld-Expo Management Limited",
+      "slug": "asiaworld-expo_management_limited",
+      "employees": 110,
+      "fit_score": 8,
+      "fit_level": "High",
+      "pain_count": 6,
+      "type": "Venue Operator",
+      "source": "me"
+    },
+    {
+      "name": "Beacon Events",
+      "slug": "beacon_events",
+      "employees": 130,
+      "fit_score": 8,
+      "fit_level": "High",
+      "pain_count": 6,
+      "type": "Conference/Niche Event Organizer",
+      "source": "me"
+    },
+    {
+      "name": "BEYOND Expo",
+      "slug": "beyond_expo",
+      "employees": 17,
+      "fit_score": 9,
+      "fit_level": "High",
+      "pain_count": 5,
+      "type": "Conference/Niche Event Organizer",
+      "source": "me"
+    },
+    {
+      "name": "Branded",
+      "slug": "branded",
+      "employees": 47,
+      "fit_score": 6,
+      "fit_level": "Medium",
+      "pain_count": 5,
+      "type": "Conference/Niche Event Organizer",
+      "source": "me"
+    },
+    {
+      "name": "China International Beauty Expo",
+      "slug": "china_international_beauty_expo",
+      "employees": 31,
+      "fit_score": 9,
+      "fit_level": "High",
+      "pain_count": 5,
+      "type": "Conference/Niche Event Organizer",
+      "source": "me"
+    },
+    {
+      "name": "Chunky Onion Productions Limited",
+      "slug": "chunky_onion_productions_limited",
+      "employees": 12,
+      "fit_score": 5,
+      "fit_level": "Medium",
+      "pain_count": 5,
+      "type": "Event Production/Fabrication",
+      "source": "me"
+    },
+    {
+      "name": "Clarion Events",
+      "slug": "clarion_events",
+      "employees": 1100,
+      "fit_score": 9,
+      "fit_level": "High",
+      "pain_count": 6,
+      "type": "Large Exhibition Organizer",
+      "source": "me"
+    },
+    {
+      "name": "CloserStill Media",
+      "slug": "closerstill_media",
+      "employees": 550,
+      "fit_score": 9,
+      "fit_level": "High",
+      "pain_count": 5,
+      "type": "Large Exhibition Organizer",
+      "source": "me"
+    },
+    {
+      "name": "Comasia Limited",
+      "slug": "comasia_limited",
+      "employees": 54,
+      "fit_score": 9,
+      "fit_level": "High",
+      "pain_count": 5,
+      "type": "Large Exhibition Organizer",
+      "source": "me"
+    },
+    {
+      "name": "Eventist",
+      "slug": "eventist",
+      "employees": 66,
+      "fit_score": 7,
+      "fit_level": "High",
+      "pain_count": 1,
+      "type": "Creative/Marketing Agency",
+      "source": "me"
+    },
+    {
+      "name": "EventWorks",
+      "slug": "eventworks",
+      "employees": 290,
+      "fit_score": 6,
+      "fit_level": "Medium",
+      "pain_count": 5,
+      "type": "Event Services",
+      "source": "me"
+    },
+    {
+      "name": "EX-R International",
+      "slug": "ex-r_international",
+      "employees": 19,
+      "fit_score": 5,
+      "fit_level": "Medium",
+      "pain_count": 4,
+      "type": "Event Services",
+      "source": "me"
+    },
+    {
+      "name": "expomobilia GmbH",
+      "slug": "expomobilia_gmbh",
+      "employees": 110,
+      "fit_score": 5,
+      "fit_level": "Medium",
+      "pain_count": 4,
+      "type": "Event Production/Fabrication",
+      "source": "me"
+    },
+    {
+      "name": "Filament Limited",
+      "slug": "filament_limited",
+      "employees": 14,
+      "fit_score": 7,
+      "fit_level": "High",
+      "pain_count": 4,
+      "type": "Creative/Marketing Agency",
+      "source": "me"
+    },
+    {
+      "name": "FUEL",
+      "slug": "fuel",
+      "employees": 170,
+      "fit_score": 6,
+      "fit_level": "Medium",
+      "pain_count": 4,
+      "type": "Creative/Marketing Agency",
+      "source": "me"
+    },
+    {
+      "name": "GL events",
+      "slug": "gl_events",
+      "employees": 5000,
+      "fit_score": 9,
+      "fit_level": "High",
+      "pain_count": 6,
+      "type": "Large Exhibition Organizer",
+      "source": "me"
+    },
+    {
+      "name": "GL events Hong Kong",
+      "slug": "gl_events_hong_kong",
+      "employees": 16,
+      "fit_score": 6,
+      "fit_level": "Medium",
+      "pain_count": 4,
+      "type": "Large Exhibition Organizer",
+      "source": "me"
+    },
+    {
+      "name": "Hong Kong Convention and Exhibition Centre (Management) Limited",
+      "slug": "hong_kong_convention_and_exhibition_centre_management_limited",
+      "employees": 140,
+      "fit_score": 8,
+      "fit_level": "High",
+      "pain_count": 5,
+      "type": "Venue Operator",
+      "source": "me"
+    },
+    {
+      "name": "InfoCommAsia Pte Ltd",
+      "slug": "infocommasia_pte_ltd",
+      "employees": 13,
+      "fit_score": 7,
+      "fit_level": "High",
+      "pain_count": 4,
+      "type": "Conference/Niche Event Organizer",
+      "source": "me"
+    },
+    {
+      "name": "Informa Markets",
+      "slug": "informa_markets",
+      "employees": 3500,
+      "fit_score": 9,
+      "fit_level": "High",
+      "pain_count": 5,
+      "type": "Large Exhibition Organizer",
+      "source": "me",
+      "challenges_t2": [
+        {
+          "title": "Flagship Asia-Pacific Anchors</h3>\n        <ul>\n            <li><strong>Jewellery & Gem WORLD Hong Kong (JGW):</strong> Serves as the ultimate B2B marketplace for the global jewellery industry <a href=\"https://www.facebook.com/ICAgemstone/posts/jewellery-gem-world-hong-kong-jgw-is-the-ultimate-b2b-marketplace-for-the-jewell/1053058563578681/\" target=\"_blank\" class=\"cite\" title=\"Source: ICA Gemstone Facebook - Highlights JGW's status as a premier B2B sourcing hub.\">[ICA Endorsement]</a>. The 2026 edition is expected to attract approximately 50,000 senior buyers from over 130 countries <a href=\"https://vendelux.com/insights/jewellery-gem-world-hong-kong-2026-attendee-list\" target=\"_blank\" class=\"cite\" title=\"Source: Vendelux Analytics - Provides data on JGW's massive global attendee base.\">[Vendelux Data]</a>.</li>\n            <li><strong>Cosmoprof Asia:</strong> Operates as the leading international beauty trade show in the Asia-Pacific region, functioning as a joint venture with BolognaFiere <a href=\"https://www.cosmoprof.com/en/corporate/cosmoprof-network/cosmoprof-made-exhibitions/cosmoprof-asia-hong-kong/\" target=\"_blank\" class=\"cite\" title=\"Source: Cosmoprof Corporate - Details the JV structure and regional dominance.\">[Cosmoprof Network]</a>.</li>\n        </ul>\n\n        <h3>The B2B Event Operational Lifecycle</h3>\n        <div class=\"workflow\">\n            <div class=\"workflow-step\">\n                <div class=\"step-num\">1</div>\n                <div>\n                    <strong>Pre-Event (Acquisition & Space Sales):</strong> Sales teams must convince high-value manufacturers to purchase premium floor space (e.g., $50k+ booths) 9-12 months in advance. This requires deep research into the prospect's current market expansion goals <a href=\"https://www.revenueroomconnect.com/public/blogs/data-driven-revenue-growth-lessons-from-informa-markets-digital-transformation\" target=\"_blank\" class=\"cite\" title=\"Source: Revenue Room Connect - Analyzes Informa's data-driven sponsorship and space sales strategies.\">[Sales Strategy Analysis]</a>.\n                </div>\n            </div>\n            <div class=\"workflow-step\">\n                <div class=\"step-num\">2</div>\n                <div>\n                    <strong>During-Event (Matchmaking & VIP Hosting):</strong> Operations pivot to facilitating high-stakes B2B matchmaking, ensuring institutional buyers meet the right suppliers, requiring real-time logistical communication <a href=\"https://www.pattrnstudios.com/work/informa-markets/transforming-digital-event-experience-at-scale\" target=\"_blank\" class=\"cite\" title=\"Source: Pattrn Studios - Notes the operational friction in scaling digital event experiences and matchmaking.\">[Digital Experience Case Study]</a>.\n                </div>\n            </div>\n            <div class=\"workflow-step\">\n                <div class=\"step-num\">3</div>\n                <div>\n                    <strong>Post-Event (Retention & Rebooking):</strong> Marketing teams distribute data intelligence reports and initiate rebooking campaigns for the following year's cycle to secure early-bird commitments <a href=\"informa_markets_searched.md\" target=\"_blank\" class=\"cite cite-analysis\" title=\"Analysis: Standard B2B event lifecycle retention protocols mapped against Informa's digital services.\">[Lifecycle Analysis]</a>.\n                </div>\n            </div>\n        </div>\n    </section>\n\n    <!-- SECTION 3: PAIN POINTS -->\n    <section>\n        <h2>3. Systemic Pain Points & Automation Gaps</h2>\n        <p>Despite their market dominance, Informa's continuous multi-sector campaign model suffers from major systemic inefficiencies stemming from structural over-reliance on rigid legacy automation.</p>\n\n        <h3>Pain Point A: Scale-Inversion Friction in Email Outreach",
+          "desc": "Managing outreach for 550 diverse events forces marketing teams to rely on rigid, template-based email automation that lacks deep industry context [Scale Challenge Analysis]."
+        },
+        {
+          "title": "Pain Point B: Social Media Silos & Manual Fragmentation",
+          "desc": "Promotional efforts across hundreds of niche event social media accounts remain heavily manual and siloed from core CRM pipelines [Operational Friction Report]."
+        },
+        {
+          "title": "Pain Point C: The \"Template vs. Custom\" Dilemma",
+          "desc": "While logistical emails (badge collection, venue maps) are safely fixed templates, high-value B2B acquisition emails must be custom. Human teams hit a capacity bottleneck attempting to research 1,000+"
+        }
+      ],
+      "insights_t2": [
+        "Jewellery & Gem WORLD Hong Kong (JGW): Serves as the ultimate B2B marketplace for the global jewellery industry [ICA Endorsement]. The 2026 edition is expected to attract approximately 50,000 senior b",
+        "Cosmoprof Asia: Operates as the leading international beauty trade show in the Asia-Pacific region, functioning as a joint venture with BolognaFiere [Cosmoprof Network].",
+        "Continuous Cognitive Deep-Research: Instead of static spreadsheets, WeExpand AI agents automatically analyze the digital footprint of target organizations, extracting background context such as specia",
+        "Context-Aware Generative Personalization: Moving beyond basic template variations, WeExpand generates tailored, highly relevant email copy for every single prospect, combining core event themes with t",
+        "Virtual Sales Force Integration: WeExpand helps businesses build a Sales Opportunity Network through an On-demand Virtual Sales Force, acting as an infinite extension of Informa's regional marketing t"
+      ],
+      "has_t2": true
+    },
+    {
+      "name": "ISS-Vision Events",
+      "slug": "iss-vision_events",
+      "employees": 21,
+      "fit_score": 6,
+      "fit_level": "Medium",
+      "pain_count": 4,
+      "type": "Event Services",
+      "source": "me",
+      "challenges_t2": [
+        {
+          "title": "The B2B Event Operational Lifecycle</h3>\n        <div class=\"workflow\">\n            <div class=\"workflow-step\">\n                <div class=\"step-num\">1</div>\n                <div>\n                    <strong>Pre-Event (Acquisition & Design Pitching):</strong> The team focuses on bespoke concept development, structural booth design, and pitching to multinational corporations, requiring highly customized outreach rather than generic templates. <a href=\"https://www.iss-vision.com/\" target=\"_blank\" class=\"cite\" title=\"Source: ISS-Vision Official Website | Description: Design Process | Explanation: Highlights the bespoke nature of their pre-event design and pitching phase.\">[Pre-Event]</a>\n                </div>\n            </div>\n            <div class=\"workflow-step\">\n                <div class=\"step-num\">2</div>\n                <div>\n                    <strong>During-Event (Show Management & VM):</strong> Operations shift to active show management, visual merchandising (VM) execution, and on-site structural carpentry, leaving zero bandwidth for digital lead nurturing. <a href=\"https://www.iss-vision.com/copy-of-exhibition\" target=\"_blank\" class=\"cite\" title=\"Source: ISS-Vision Portfolio | Description: VM & Exhibition Execution | Explanation: Confirms the heavy operational lift required during live events.\">[Live Ops]</a>\n                </div>\n            </div>\n            <div class=\"workflow-step\">\n                <div class=\"step-num\">3</div>\n                <div>\n                    <strong>Post-Event (Retention & Audits):</strong> Account managers must manually compile sustainability metrics, gather client feedback, and draft personalized follow-up emails to secure retainer contracts, creating a severe administrative bottleneck. <a href=\"https://www.iss-vision.com/\" target=\"_blank\" class=\"cite\" title=\"Source: ISS-Vision Official Website | Description: Sustainable Reality | Explanation: References their commitment to sustainable event realities requiring post-event reporting.\">[Post-Event]</a>\n                </div>\n            </div>\n        </div>\n    </section>\n\n    <!-- SECTION 3: PAIN POINTS -->\n    <section>\n        <h2>3. Systemic Pain Points & Digital Friction</h2>\n        <p>Despite their strong industry reputation, ISS-Vision faces structural inefficiencies caused by the collision of high-touch client expectations and limited manual bandwidth.</p>\n\n        <h3>Pain Point A: The Customization-Scalability Paradox",
+          "desc": "Because ISS-Vision targets elite brands, their outbound emails must reflect the same bespoke quality as their physical event designs. [Bespoke Requirement]"
+        },
+        {
+          "title": "Pain Point B: Manual Social Media & Fragmentation",
+          "desc": "An audit of their digital footprint reveals manual, low-frequency social media management, with their Instagram account showing only 24 posts and 190 followers despite handling massive real-world acti"
+        },
+        {
+          "title": "Pain Point C: B2B Networking Lead Leakage",
+          "desc": "After attending major trade shows like MIPIM Asia, the team relies on manual business card scanning and ad-hoc email drafting to follow up with real estate and corporate partners. [Lead Leakage]"
+        }
+      ],
+      "insights_t2": [
+        "Dynamic B2B Personalization Engine: The AI agent scans public brand profiles, past event interactions, and regional market indices to craft hyper-targeted narratives that mirror ISS-Vision's bespoke d",
+        "Autonomous Post-Event Follow-Ups: WeExpand handles the post-event feedback pipeline automatically, reaching out to attendees of events like MIPIM Asia with relevant event highlights and sustainability",
+        "Intelligent Pipeline Enrichment: By processing B2B networking data, the AI system surfaces warm leads, tracks response sentiments, and handles initial follow-ups autonomously, ensuring high-value pros",
+        "Social Media Orchestration: Automatically translates event case studies (like the Ngong Ping 360 activation) into optimized LinkedIn and Instagram posts, solving their social media stagnation without "
+      ],
+      "has_t2": true
+    },
+    {
+      "name": "JEC",
+      "slug": "jec",
+      "employees": 200,
+      "fit_score": 8,
+      "fit_level": "High",
+      "pain_count": 4,
+      "type": "Conference/Niche Event Organizer",
+      "source": "me",
+      "challenges_t2": [
+        {
+          "title": "Global Flagships & Regional Hubs</h3>\n        <ul>\n            <li><strong>JEC World (Paris):</strong> The undisputed global pinnacle of the composites industry, held annually at Paris Nord Villepinte, gathering the entire global supply chain from raw material suppliers to OEMs <a href=\"https://www.compositesworld.com/articles/jec-group-looks-ahead-to-jec-world-2025\" target=\"_blank\" class=\"cite\" title=\"Source: CompositesWorld | Description: Flagship Event Overview | Explanation: Validates the status of JEC World as the central hub for the global industry.\">[JEC World]</a>.</li>\n            <li>The 2025 edition marked a historic milestone as the largest JEC World ever, celebrating its 60th anniversary by attracting over 45,000 professional visits from 94 countries <a href=\"https://www.jeccomposites.com/news/by-jec/jec-world-2025-a-record-breaking-60th-edition-driven-by-innovation-and-circularity/\" target=\"_blank\" class=\"cite\" title=\"Source: JEC Official News | Description: 2025 Statistics | Explanation: Confirms the record-breaking 45,000 attendance metric for the 60th edition.\">[2025 Milestone]</a>.</li>\n            <li>Looking ahead, JEC World 2026 is projected to break records again with 46,000 expected visits, 1,400 exhibitors, and 78,000 square meters of showfloor space <a href=\"https://www.jec-world.events/\" target=\"_blank\" class=\"cite\" title=\"Source: JEC World 2026 Portal | Description: 2026 Projections | Explanation: Details the aggressive growth targets for the upcoming March 2026 event.\">[2026 Projections]</a>.</li>\n            <li>Beyond Paris, the group orchestrates regional B2B One to One events and specialized forums, such as JEC Forum Italy, which highlights pioneering startups and advanced manufacturing solutions <a href=\"https://www.linkedin.com/posts/jec-composites_jecforumitaly-compositesinnovation-advancedmanufacturing-activity-7323334092513501184-zEDU\" target=\"_blank\" class=\"cite\" title=\"Source: JEC LinkedIn Post | Description: Regional Forums | Explanation: Maps out the application-specific and regional event strategy.\">[JEC Forums]</a>.</li>\n        </ul>\n\n        <h3>The B2B Technical Event Lifecycle</h3>\n        <div class=\"workflow\">\n            <div class=\"workflow-step\">\n                <div class=\"step-num\">1</div>\n                <div>\n                    <strong>Pre-Event (Technical Prospecting & Space Sales):</strong> Sales engineers must convince specialized manufacturers to invest in premium pavilions by referencing highly specific material sciences and engineering breakthroughs <a href=\"https://www.expocaptive.com/jec-world/\" target=\"_blank\" class=\"cite\" title=\"Source: ExpoCaptive | Description: Exhibitor Acquisition | Explanation: Details the complex, high-ticket sales cycle for technical floor space targeting aerospace and automotive leaders.\">[Exhibitor Sales]</a>. This requires deep research into the prospect's recent patents, material certifications, and ESG circularity goals to craft a relevant value proposition <a href=\"https://www.jeccomposites.com/news/by-jec/jec-world-2025-a-record-breaking-60th-edition-driven-by-innovation-and-circularity/\" target=\"_blank\" class=\"cite cite-analysis\" title=\"Analysis: B2B Technical Sales | Description: Outreach Requirements | Explanation: Selling to engineers requires referencing specific material sciences like bio-resins or automated fiber placement.\">[Technical Outreach]</a>.\n                </div>\n            </div>\n            <div class=\"workflow-step\">\n                <div class=\"step-num\">2</div>\n                <div>\n                    <strong>During-Event (Matchmaking & Conference Tracks):</strong> Operations pivot to managing complex technical conference tracks, VIP matchmaking between aerospace OEMs and tier-2 suppliers, and live startup pitch competitions <a href=\"https://www.linkedin.com/posts/jec-composites_jecforumitaly-compositesinnovation-advancedmanufacturing-activity-7323334092513501184-zEDU\" target=\"_blank\" class=\"cite\" title=\"Source: JEC LinkedIn | Description: Event Programming | Explanation: Confirms the heavy operational lift required to manage technical knowledge transfer and startup showcases.\">[Live Ops]</a>.\n                </div>\n            </div>\n            <div class=\"workflow-step\">\n                <div class=\"step-num\">3</div>\n                <div>\n                    <strong>Post-Event (Rebooking & Intelligence Distribution):</strong> Account managers must distribute post-show technical whitepapers and initiate rebooking campaigns for the next annual cycle to secure early-bird commitments <a href=\"https://www.k-online.com/en/Media_News/News/JEC_WORLD_Composites_trade_fair_to_celebrate_60th_anniversary_in_Paris_45,000_visitors_expected\" target=\"_blank\" class=\"cite\" title=\"Source: K-Online | Description: Post-Event Retention | Explanation: Shows the reliance on technical content and early rebooking to maintain momentum for the next Paris edition.\">[Post-Event]</a>. Follow-ups must reference specific technical discussions held at the booth to secure multi-year pavilion contracts <a href=\"https://www.jec-world.events/\" target=\"_blank\" class=\"cite cite-analysis\" title=\"Analysis: Retention Strategy | Description: Rebooking Friction | Explanation: Manual follow-ups for 1,400 technical exhibitors create a severe administrative bottleneck.\">[Retention Bottleneck]</a>.\n                </div>\n            </div>\n        </div>\n    </section>\n\n    <!-- SECTION 3: PAIN POINTS -->\n    <section>\n        <h2>3. Systemic Pain Points & Digital Friction</h2>\n        <p>Despite their undisputed market dominance, JEC Group faces structural inefficiencies caused by the collision of highly technical client expectations and the limitations of legacy marketing automation.</p>\n\n        <h3>Pain Point A: The Technical Context-Scale Paradox",
+          "desc": "Because JEC engages with niche engineering fields, outreach must feature highly customized technical terminology to earn executive trust [Trust Deficit]."
+        },
+        {
+          "title": "Pain Point B: Post-Event Lead Stagnation",
+          "desc": "After massive events like JEC World, the team captures tens of thousands of technical leads, but relies on manual business card scanning and ad-hoc email drafting to follow up with R&D directors [Lead"
+        },
+        {
+          "title": "Pain Point C: Social Media & Media Fragmentation",
+          "desc": "Promotional efforts across LinkedIn and specialized media channels remain heavily manual, lacking automated, lead-triggered social outreach that aligns with email sequences [Social Audit]."
+        }
+      ],
+      "insights_t2": [
+        "JEC World (Paris): The undisputed global pinnacle of the composites industry, held annually at Paris Nord Villepinte, gathering the entire global supply chain from raw material suppliers to OEMs [JEC ",
+        "The 2025 edition marked a historic milestone as the largest JEC World ever, celebrating its 60th anniversary by attracting over 45,000 professional visits from 94 countries [2025 Milestone].",
+        "Looking ahead, JEC World 2026 is projected to break records again with 46,000 expected visits, 1,400 exhibitors, and 78,000 square meters of showfloor space [2026 Projections].",
+        "Beyond Paris, the group orchestrates regional B2B One to One events and specialized forums, such as JEC Forum Italy, which highlights pioneering startups and advanced manufacturing solutions [JEC Foru",
+        "Dynamic Technical Personalization Engine: The AI agent scans public patent databases, corporate ESG sustainability reports, and technical press releases to craft hyper-targeted narratives [AI Engine].",
+        "Autonomous Post-Event Rebooking: WeExpand handles the post-show feedback pipeline automatically, matching past floor spaces with upcoming technical pavilion options for JEC World 2027 [Auto Follow-up]",
+        "Intelligent Pipeline Enrichment: By processing B2B networking data, the AI system surfaces warm leads, tracks response sentiments regarding specific material applications, and handles initial follow-u",
+        "Social Media Orchestration: Automatically translates technical case studies and JEC Innovation Award winner announcements into optimized LinkedIn posts, solving content stagnation without draining edi"
+      ],
+      "has_t2": true
+    },
+    {
+      "name": "Kai Tak Sports Park",
+      "slug": "kai_tak_sports_park",
+      "employees": 160,
+      "fit_score": 8,
+      "fit_level": "High",
+      "pain_count": 5,
+      "type": "Venue Operator",
+      "source": "me",
+      "challenges_t2": [
+        {
+          "title": "Global Flagships & Anchor Events</h3>\n        <ul>\n            <li><strong>The Hong Kong International Rugby Sevens:</strong> Successfully transitioned from the aging HK Stadium to KTSP in April 2025, drawing tens of thousands of international visitors and featuring a centenary tribute flyover by Cathay Pacific <a href=\"https://www.sohu.com/a/882930192_121124578\" target=\"_blank\" class=\"cite\" title=\"Source: Sohu Sports | Description: Rugby Sevens 2025 | Explanation: Validates the venue's capability to host complex, multi-day international sports tournaments.\">[Rugby Sevens]</a>.</li>\n            <li><strong>Mega-Concert Tours:</strong> The 50,000-seat main stadium has hosted elite global acts including G.E.M.'s \"I AM GLORIA\" World Tour, with upcoming dates secured for Coldplay, Mayday, and Stefanie Sun <a href=\"https://www.hk01.com/article/100012\" target=\"_blank\" class=\"cite\" title=\"Source: HK01 Entertainment | Description: Concert Pipeline | Explanation: Details the massive B2B acquisition wins securing top-tier global music promoters.\">[Concert Pipeline]</a>.</li>\n            <li><strong>The 15th National Games of China (Nov 2025):</strong> Designated as the core Hong Kong venue for this national event, requiring high-level diplomatic coordination across government agencies and mainland sports federations <a href=\"https://www.bayarea.gov.cn/news/202511/t20251109_88291.htm\" target=\"_blank\" class=\"cite\" title=\"Source: Greater Bay Area Portal | Description: National Games | Explanation: Highlights the venue's role in regional sports diplomacy and government-level event management.\">[National Games]</a>.</li>\n        </ul>\n\n        <h3>The B2B Venue Acquisition Lifecycle</h3>\n        <div class=\"workflow\">\n            <div class=\"workflow-step\">\n                <div class=\"step-num\">1</div>\n                <div>\n                    <strong>Pre-Event (Technical Pitching & B2B Outreach):</strong> The commercial sales team must proactively pitch the venue to global concert promoters (e.g., Live Nation, AEG) and international sports federations <a href=\"https://www.kaitaksportspark.com.hk/en/business-opportunities/\" target=\"_blank\" class=\"cite\" title=\"Source: KTSP B2B Portal | Description: Sales Process | Explanation: Outlines the proactive B2B outreach required to fill the 365-day calendar.\">[Sales Process]</a>. This requires transmitting highly complex technical riders detailing stage load-bearing capacities, rigging points, and acoustic profiles <a href=\"https://www.pollstar.com/article/kai-tak-sports-park-technical-specs\" target=\"_blank\" class=\"cite cite-analysis\" title=\"Analysis: Venue Sales Dynamics | Description: Technical Requirements | Explanation: Selling a 50k stadium requires transmitting dense engineering data, not generic marketing fluff.\">[Tech Riders]</a>.\n                </div>\n            </div>\n            <div class=\"workflow-step\">\n                <div class=\"step-num\">2</div>\n                <div>\n                    <strong>During-Event (Live Operations & VIP Hospitality):</strong> Operations shift entirely to physical execution, managing crowd control, VIP corporate hospitality suites, and real-time logistical troubleshooting <a href=\"https://www.info.gov.hk/gia/general/202504/12/P202504120033.htm\" target=\"_blank\" class=\"cite\" title=\"Source: GovHK Security Release | Description: Live Ops | Explanation: Confirms the massive operational drag during live events, pulling staff away from digital pipelines.\">[Live Ops]</a>. During these periods, the B2B sales pipeline frequently stalls as account directors are deployed on the floor <a href=\"https://www.kaitaksportspark.com.hk/en/media/press-releases/\" target=\"_blank\" class=\"cite cite-analysis\" title=\"Analysis: Resource Allocation | Description: Bandwidth Friction | Explanation: Physical event execution creates a severe bottleneck for continuous B2B lead nurturing.\">[Bandwidth Friction]</a>.\n                </div>\n            </div>\n            <div class=\"workflow-step\">\n                <div class=\"step-num\">3</div>\n                <div>\n                    <strong>Post-Event (Data Reporting & Re-booking):</strong> Account managers must compile post-show attendance metrics, F&B revenue splits, and demographic data to pitch renewal options for the promoter's next Asian tour leg <a href=\"https://www.kaitaksportspark.com.hk/en/business-opportunities/\" target=\"_blank\" class=\"cite\" title=\"Source: KTSP B2B Portal | Description: Retention Strategy | Explanation: Shows the reliance on post-event data to secure multi-year B2B contracts.\">[Retention Strategy]</a>. Follow-ups must be hyper-personalized to the specific technical successes of the event to secure early-bird commitments <a href=\"https://www.venuehub.com/blog/post-event-retention\" target=\"_blank\" class=\"cite cite-analysis\" title=\"Analysis: Venue Retention | Description: Rebooking Friction | Explanation: Manual follow-ups for global promoters across different time zones lead to severe lead leakage.\">[Rebooking Friction]</a>.\n                </div>\n            </div>\n        </div>\n    </section>\n\n    <!-- SECTION 3: PAIN POINTS -->\n    <section>\n        <h2>3. Systemic Pain Points & Digital Friction</h2>\n        <p>Despite its world-class physical infrastructure, KTSP's B2B acquisition and retention workflows suffer from structural inefficiencies caused by the collision of massive venue scale and moderate digital automation maturity.</p>\n\n        <h3>Pain Point A: The B2B Customization Bottleneck",
+          "desc": "Pitching a 50,000-seat stadium to a global music promoter requires entirely different technical terminology and logistical data than pitching a corporate sports day to a regional bank [Niche Segmentat"
+        },
+        {
+          "title": "Pain Point B: B2C-Heavy Social Silos & Manual B2B Outreach",
+          "desc": "An audit of KTSP's digital footprint shows that platforms like Facebook and Instagram are heavily optimized for B2C ticket sales, crowd photos, and government announcements [Social Audit]."
+        },
+        {
+          "title": "Pain Point C: Post-Event Lead Stagnation",
+          "desc": "The organization owns massive directories of past corporate clients, regional entertainment agencies, and historical government accounts [Data Stagnation]."
+        }
+      ],
+      "insights_t2": [
+        "The Hong Kong International Rugby Sevens: Successfully transitioned from the aging HK Stadium to KTSP in April 2025, drawing tens of thousands of international visitors and featuring a centenary tribu",
+        "Mega-Concert Tours: The 50,000-seat main stadium has hosted elite global acts including G.E.M.'s \"I AM GLORIA\" World Tour, with upcoming dates secured for Coldplay, Mayday, and Stefanie Sun [Concert P",
+        "The 15th National Games of China (Nov 2025): Designated as the core Hong Kong venue for this national event, requiring high-level diplomatic coordination across government agencies and mainland sports",
+        "Dynamic B2B Context Mapping: The AI agent scans global tour schedules, corporate ESG reports, and sports federation calendars to craft hyper-targeted venue concepts [AI Engine]. This ensures outreach ",
+        "Autonomous Post-Show Retargeting: WeExpand handles the post-event feedback pipeline automatically, matching promoter histories with available future calendar openings [Auto Follow-up]. It uses past pe",
+        "Intelligent Multi-Channel Generation: The AI engine connects with CRM systems and LinkedIn platforms to turn manual social workflows into an active B2B inbound pipeline [Social Sync]. This protects th"
+      ],
+      "has_t2": true
+    },
+    {
+      "name": "KEYS",
+      "slug": "keys",
+      "employees": 18,
+      "fit_score": 8,
+      "fit_level": "High",
+      "pain_count": 4,
+      "type": "Platform/Marketplace",
+      "source": "me",
+      "challenges_t2": [
+        {
+          "title": "The Luxury Venue Privatization Lifecycle</h3>\n        <div class=\"workflow\">\n            <div class=\"workflow-step\">\n                <div class=\"step-num\">1</div>\n                <div>\n                    <strong>Pre-Event Configuration & Bespoke Matching:</strong> The sales team matches luxury brands with modular, bespoke spaces, such as the 160 m\u00b2 Rue de la Paix Apartment overlooking Place Vend\u00f4me <a href=\"https://www.keysvenue.com/en/news/\" target=\"_blank\" class=\"cite\" title=\"Source: Keys Venue Property Spotlight | Description: Spatial Matching | Explanation: Demonstrates the hyper-specific nature of venue matching for elite corporate clients.\">[Spatial Matching]</a>. This requires deep research into the prospect's brand identity, spatial requirements, and privacy needs <a href=\"https://www.keysvenue.com/en/keys-venues-event-staging-the-art-of-modular-spaces-for-auteur-events/\" target=\"_blank\" class=\"cite\" title=\"Source: Keys Venue Event Staging | Description: Customization Depth | Explanation: Highlights the necessity of treating each event as an 'auteur' production requiring unique spatial configurations.\">[Customization Depth]</a>.\n                </div>\n            </div>\n            <div class=\"workflow-step\">\n                <div class=\"step-num\">2</div>\n                <div>\n                    <strong>During-Event Execution & Immersive Staging:</strong> Operations focus on delivering \"auteur events\" featuring custom lighting, immersive sound design, and gourmet catering partnerships <a href=\"https://www.keysvenue.com/en/event-space-rental-management-france/\" target=\"_blank\" class=\"cite\" title=\"Source: Keys Venue Service Matrix | Description: Live Operations | Explanation: Details the complex vendor coordination required during high-stakes fashion and corporate events.\">[Live Operations]</a>. Account directors must handle incoming VIP updates on-the-fly, leaving no internal bandwidth for continuous lead nurturing or promotional outbox tracking <a href=\"https://wanderlog.com/place/details/12138641/keys-venue\" target=\"_blank\" class=\"cite\" title=\"Source: Wanderlog Venue Reviews | Description: Bandwidth Friction | Explanation: Client testimonials confirm the intense, high-touch nature of the on-site management team.\">[Bandwidth Friction]</a>.\n                </div>\n            </div>\n            <div class=\"workflow-step\">\n                <div class=\"step-num\">3</div>\n                <div>\n                    <strong>Post-Event Engagement & CSR Reporting:</strong> The agency handles comprehensive feedback loops and CSR impact reporting, ensuring continuous refinement of the client experience <a href=\"https://www.keysvenue.com/en/event-agency-paris-venue-rental/\" target=\"_blank\" class=\"cite\" title=\"Source: Keys Venue Client Retention | Description: Post-Event Protocols | Explanation: Outlines the administrative drag associated with post-event sustainability and satisfaction audits.\">[Post-Event Protocols]</a>. Because each venue and client demand a unique narrative, the agency avoids down-market consumer gatherings, strictly protecting the prestige of its portfolio <a href=\"https://www.keysvenue.com/en/professional-business-event-paris-september/\" target=\"_blank\" class=\"cite\" title=\"Source: Keys Venue B2B Focus | Description: Brand Protection | Explanation: Confirms the strategic exclusion of low-margin or non-prestige events to maintain market positioning.\">[Brand Protection]</a>.\n                </div>\n            </div>\n        </div>\n    </section>\n\n    <!-- SECTION 3: PAIN POINTS -->\n    <section>\n        <h2>3. Systemic Pain Points & Automation Gaps</h2>\n        <p>Despite their dominant market position in the French luxury sector, KEYS faces structural inefficiencies caused by the collision of high-touch client expectations and the limitations of manual outreach <a href=\"https://x.com/KeysVenue\" target=\"_blank\" class=\"cite\" title=\"Source: Keys Venue X/Twitter Hiring | Description: Operational Bottlenecks | Explanation: Public job postings for business developers highlight the struggle to scale outbound B2B networking manually.\">[Operational Bottlenecks]</a>.</p>\n\n        <h3>Pain Point A: The Customization-Scale Paradox",
+          "desc": "High-end corporate venue sales require deeply customized messaging tailored to a brand's unique identity, making traditional template emails entirely unsuitable for luxury clients [Template Failure]."
+        },
+        {
+          "title": "Pain Point B: Manual Visual Marketing Drag",
+          "desc": "Promoting luxury venues requires a constant stream of high-quality visual content and reels across social platforms, which drains valuable hours from the lean 18-person team [Content Production Drag]."
+        },
+        {
+          "title": "Pain Point C: Fragmented B2B Outreach & Database Stagnation",
+          "desc": "Reaching international event planners, PR agencies, and luxury brand directors relies heavily on manual networking and static directories, missing opportunities for automated, data-driven lead enrichm"
+        }
+      ],
+      "insights_t2": [
+        "Dynamic B2B Personalization Engine: The AI agent scans public brand profiles, past event interactions, and regional market indices to craft hyper-targeted narratives [Deep Footprint Analysis]. This en",
+        "Autonomous Post-Event Follow-Ups: WeExpand handles the post-event feedback pipeline automatically, reaching out to attendees with relevant event highlights and CSR metrics [Post-Event Automation]. It ",
+        "Intelligent Pipeline Enrichment: By processing historical client lists, the AI system surfaces warm leads, tracks response sentiments, and handles initial follow-ups autonomously [Database Activation]",
+        "Autonomous Visual Syndication: The platform can automatically transform venue imagery and staging concepts into localized, multi-channel social content, solving the manual marketing drag [Visual Autom"
+      ],
+      "has_t2": true
+    },
+    {
+      "name": "Leader Associates",
+      "slug": "leader_associates",
+      "employees": 94,
+      "fit_score": 8,
+      "fit_level": "High",
+      "pain_count": 4,
+      "type": "Conference/Niche Event Organizer",
+      "source": "me",
+      "challenges_t2": [],
+      "insights_t2": [],
+      "has_t2": true
+    },
+    {
+      "name": "Marintec China",
+      "slug": "marintec_china",
+      "employees": 50,
+      "fit_score": 7,
+      "fit_level": "High",
+      "pain_count": 4,
+      "type": "Conference/Niche Event Organizer",
+      "source": "me",
+      "challenges_t2": [
+        {
+          "title": "Pre-Event: Global Acquisition & Thematic Marketing",
+          "desc": "The team must coordinate with global maritime bodies and manage complex booth allocations for over 2,200 exhibiting companies [[6]]."
+        },
+        {
+          "title": "During-Event: On-Site Logistics & Specialized Forums",
+          "desc": "Operations shift to managing massive on-site logistics at the Shanghai New International Expo Centre (SNIEC), hosting specialized forums like the Maritime Battery Forum [[19]]."
+        },
+        {
+          "title": "Post-Event: Lead Nurturing & Biennial Retention",
+          "desc": "The team must distribute post-show media releases and nurture leads for the next biennial cycle, relying on digital channels and email databases [[31]]."
+        },
+        {
+          "title": "Pain Point A: The B2B Template Bottleneck",
+          "desc": "With over 2,200 exhibitors and 100,000 attendees, relying on static email templates fails to address the highly technical niches of naval architects and marine engineers [[23]]."
+        },
+        {
+          "title": "Pain Point B: Manual Social Media Fragmentation",
+          "desc": "While Marintec China maintains a LinkedIn presence, manually updating global maritime audiences across different time zones creates severe operational drag for the marketing team [[36]]."
+        },
+        {
+          "title": "Pain Point C: Lead Stagnation in Biennial Cycles",
+          "desc": "Because the event occurs every two years, maintaining B2B engagement during the off-years requires continuous, automated nurturing that manual teams cannot sustain [[22]]."
+        }
+      ],
+      "insights_t2": [],
+      "has_t2": true
+    },
+    {
+      "name": "Messe Frankfurt (Shanghai) Co Ltd",
+      "slug": "messe_frankfurt_shanghai_co_ltd",
+      "employees": 91,
+      "fit_score": 7,
+      "fit_level": "Medium",
+      "pain_count": 4,
+      "type": "Large Exhibition Organizer",
+      "source": "me",
+      "challenges_t2": [
+        {
+          "title": "Flagship Trade Fair Executions</h3>\n        <ul>\n            <li>The company's flagship automotive event, Automechanika Shanghai, featured concurrent forums on New Energy Vehicles during its December 2024 edition <a href=\"https://baike.baidu.com/en/item/Automechanika%20Shanghai/16798\" target=\"_blank\" class=\"cite\" title=\"Source: Baidu Baike | Description: Automechanika Shanghai 2024 | Explanation: Highlights the integration of New Energy Vehicle forums into the massive automotive trade fair.\">[Baidu Baike]</a>.</li>\n            <li>In the entertainment and audio sector, Music China 2025 successfully concluded in October at the Shanghai New International Expo Centre, drawing a global vision of audio professionals <a href=\"https://en.musicchina-expo.com/zhanhuinew/529.html\" target=\"_blank\" class=\"cite\" title=\"Source: Music China Official | Description: Music China 2025 Conclusion | Explanation: Confirms the successful execution and global reach of the October 2025 music technology exhibition.\">[Music China]</a>.</li>\n            <li>For the stationery and office supply industry, Paperworld China is scheduled for November 21-23, 2025, at the Shanghai World Expo Exhibition and Convention Center <a href=\"https://www.tradeindia.com/tradeshows/organizer-38711629/messe-frankfurt-shanghai-co-ltd-beijing-branch.html\" target=\"_blank\" class=\"cite\" title=\"Source: TradeIndia | Description: Paperworld China 2025 | Explanation: Provides the exact dates and venue for the upcoming 2025 stationery trade fair.\">[TradeIndia]</a>.</li>\n            <li>Additionally, ISH China & CIHE 2025 was jointly organized with CIEC GL events in early 2025, focusing heavily on HVAC and modern building technologies <a href=\"https://www.facebook.com/ISHChinaCIHE/posts/jointly-organised-by-messe-frankfurt-shanghai-co-ltd-and-ciec-gl-events-beijing-/1167333348512888/\" target=\"_blank\" class=\"cite\" title=\"Source: Facebook ISH China | Description: ISH China & CIHE 2025 | Explanation: Details the joint venture structure and focus on building technologies.\">[Facebook ISH]</a>.</li>\n        </ul>\n\n        <h3>B2B Event Lifecycle Friction Points",
+          "desc": "Despite their massive scale, B2B event marketers face significant hurdles, with 23.8% finding it most challenging to align specific events with their broader corporate marketing plans [OnlineExpo]."
+        }
+      ],
+      "insights_t2": [
+        "The company's flagship automotive event, Automechanika Shanghai, featured concurrent forums on New Energy Vehicles during its December 2024 edition [Baidu Baike].",
+        "In the entertainment and audio sector, Music China 2025 successfully concluded in October at the Shanghai New International Expo Centre, drawing a global vision of audio professionals [Music China].",
+        "For the stationery and office supply industry, Paperworld China is scheduled for November 21-23, 2025, at the Shanghai World Expo Exhibition and Convention Center [TradeIndia].",
+        "Additionally, ISH China & CIHE 2025 was jointly organized with CIEC GL events in early 2025, focusing heavily on HVAC and modern building technologies [Facebook ISH]."
+      ],
+      "has_t2": true
+    },
+    {
+      "name": "Milton Exhibits",
+      "slug": "milton_exhibits",
+      "employees": 110,
+      "fit_score": 5,
+      "fit_level": "Medium",
+      "pain_count": 4,
+      "type": "Event Production/Fabrication",
+      "source": "me",
+      "challenges_t2": [
+        {
+          "title": "The B2B Exhibition Lifecycle</h3>\n        <div class=\"workflow\">\n            <div class=\"workflow-step\">\n                <div class=\"step-num\">1</div>\n                <div>\n                    <strong>Pre-Event (Design & Pitching):</strong> The team engages in intensive 3D design pitching, structural engineering, and sustainable material sourcing to win exhibitor contracts 6-12 months in advance <a href=\"https://milton-exhibits.com/services/design\" class=\"cite\" title=\"Source: Milton Design Services | Description: Pre-Event Workflow | Explanation: Highlights the intensive 3D design and material sourcing required to win contracts months in advance.\">[Design Workflow]</a>.\n                </div>\n            </div>\n            <div class=\"workflow-step\">\n                <div class=\"step-num\">2</div>\n                <div>\n                    <strong>During-Event (Construction & Execution):</strong> Operations pivot to on-site booth fabrication, strict safety management, and interactive technology integration, requiring real-time logistical coordination <a href=\"https://milton-exhibits.com/services/construction\" class=\"cite\" title=\"Source: Milton Construction Services | Description: On-Site Execution | Explanation: Details the on-site fabrication and safety management required during live events.\">[Execution Phase]</a>.\n                </div>\n            </div>\n            <div class=\"workflow-step\">\n                <div class=\"step-num\">3</div>\n                <div>\n                    <strong>Post-Event (Dismantling & Retention):</strong> Post-show workflows involve safe dismantling, lead generation for the following year's exhibitions, and ROI reporting for corporate clients to secure rebooking <a href=\"https://milton-exhibits.com/services/project-management\" class=\"cite\" title=\"Source: Milton Project Management | Description: Post-Event Workflow | Explanation: Outlines the post-show dismantling and lead generation processes for future rebooking.\">[Retention Phase]</a>.\n                </div>\n            </div>\n        </div>\n    </section>\n\n    <section>\n        <h2>3. Systemic Pain Points & Digital Friction</h2>\n        <p>Despite their market dominance, Milton Exhibits faces severe scaling friction due to the highly customized nature of B2B exhibition sales and manual outreach processes <a href=\"https://www.linkedin.com/company/milton-exhibits\" class=\"cite cite-analysis\" title=\"Analysis: B2B Sales Audit | Description: Scaling Friction | Explanation: Identifies the core bottleneck of scaling highly customized B2B exhibition sales manually.\">[Sales Audit]</a>.</p>\n        \n        <h3>Pain Point A: The \"Customization vs. Scale\" Paradox",
+          "desc": "Selling custom booth designs requires pitches tailored to each exhibitor's specific brand guidelines, booth size, and product launch themes [Customization Need]."
+        },
+        {
+          "title": "Pain Point B: Manual Social Media & Portfolio Showcasing",
+          "desc": "The marketing team manually uploads 3D renders, time-lapse construction videos, and event recaps to LinkedIn and Instagram, consuming massive amounts of time [Social Audit]."
+        },
+        {
+          "title": "Pain Point C: Post-Event Lead Leakage",
+          "desc": "Following massive trade fairs, the team struggles to manually follow up with thousands of exhibitors to secure early-bird rebooking for the next year's event [CRM Analysis]."
+        }
+      ],
+      "insights_t2": [
+        "Automated Brand Guideline Scraping: WeExpand AI automatically scrapes target exhibitors' websites, recent product launches, and brand guidelines to generate hyper-personalized 3D design concepts and p",
+        "Omni-Channel Portfolio Syndication: The AI automatically transforms completed booth photography into localized social media posts and automated follow-up sequences, turning past projects into future l",
+        "Virtual Sales Force: WeExpand acts as an infinite extension of Milton's sales team, continuously nurturing exhibitor databases to secure early-bird rebooking commitments [Virtual Force]."
+      ],
+      "has_t2": true
+    },
+    {
+      "name": "Mykar Events",
+      "slug": "mykar_events",
+      "employees": 12,
+      "fit_score": 5,
+      "fit_level": "Medium",
+      "pain_count": 4,
+      "type": "Conference/Niche Event Organizer",
+      "source": "me",
+      "contacts": [
+        {
+          "name": "Ailyn Mars",
+          "role": "Assistant Sales Manager"
+        }
+      ],
+      "pains_t1": [],
+      "solution_t1": [
+        {
+          "pain": "Personalized Sales &amp; Marketing Outreach",
+          "weexpand": "Recommended application: generate first-draft outreach messages customized by company type, event role, sector, and likely business objective, then keep human review before sending."
+        },
+        {
+          "pain": "Reply Classification &amp; Next Actions",
+          "weexpand": "Recommended application: classify replies by interest level, meeting need, information request, or low priority so the team can follow up more consistently."
+        },
+        {
+          "pain": "Content Customisation",
+          "weexpand": "Recommended application: turn event information into draft LinkedIn posts, EDM copy, case summaries, proposal snippets, and post-event recap material."
+        },
+        {
+          "pain": "CRM / Internal Handover Summary",
+          "weexpand": "Recommended application: summarize client background, contact role, event context, possible pain points, and recommended next steps for sales and project teams."
+        }
+      ],
+      "outreach": "Mykar Events appears in the EMF contact export as a company in events services with keywords such as aerospace, hospitality, product launch, infrastructure, market research, webinar. Based on WeExpand&#x27;s confirmed focus on AI agents for business process automation in Sales &amp; Marketing, the m",
+      "has_t1": true
+    },
+    {
+      "name": "Noah (Asia) Limited - Marketing Agency",
+      "slug": "noah_asia_limited_-_marketing_agency",
+      "employees": 11,
+      "fit_score": 8,
+      "fit_level": "High",
+      "pain_count": 6,
+      "type": "Creative/Marketing Agency",
+      "source": "me",
+      "pains_t1": [],
+      "solution_t1": [
+        {
+          "pain": "Personalized Sales Outreach",
+          "weexpand": "Recommended application: generate sector-specific first drafts for brand, retail, mall, and corporate event prospects, then let Noah's team review before sending."
+        },
+        {
+          "pain": "Reply Classification & Next Actions",
+          "weexpand": "Recommended application: classify replies by interest level and suggest follow-up actions, while keeping final client communication under team control."
+        },
+        {
+          "pain": "Content Customisation",
+          "weexpand": "Recommended application: turn event cases into draft LinkedIn posts, EDM copy, proposal snippets, and campaign recaps customized by client sector."
+        },
+        {
+          "pain": "CRM / Handover Summaries",
+          "weexpand": "Recommended application: summarize client background, project context, pain points, and next-step suggestions for internal sales and project handover."
+        }
+      ],
+      "outreach": "Noah works across event management, exhibitions, roadshows, retail displays and brand activations.\n              These projects may involve heavy pre-event client communication, proposal preparation, promotion\n              content, and post-event follow-up. Based on WeExpand's confirmed focus on AI",
+      "has_t1": true,
+      "challenges_t2": [
+        {
+          "title": "Pain Point A: The Customization-Scalability Paradox",
+          "desc": "With only 11 employees, the agency faces a severe capacity bottleneck when attempting to manually research and draft custom pitches for diverse B2B and B2G prospects [Capacity Bottleneck]."
+        },
+        {
+          "title": "Pain Point B: Template vs. Custom Dilemma",
+          "desc": "While logistical emails can be templated, high-value corporate and government pitches require deep customization. Traditional automation tools fail to capture the nuanced tone required for public sect"
+        },
+        {
+          "title": "Pain Point C: Manual Social Media & PR Fragmentation",
+          "desc": "Promotional efforts and PR updates remain heavily manual, siloed from core CRM pipelines, limiting the agency's ability to scale its digital footprint and maintain consistent post-event engagement [So"
+        }
+      ],
+      "insights_t2": [
+        "Continuous Cognitive Deep-Research: Instead of static spreadsheets, WeExpand AI agents automatically analyze the digital footprint of target organizations, extracting background context such as recent",
+        "Context-Aware Generative Personalization: Moving beyond basic template variations, WeExpand generates tailored, highly relevant email copy for every single prospect, combining core event themes with t",
+        "Virtual Sales Force Integration: WeExpand helps businesses build a Sales Opportunity Network through an On-demand Virtual Sales Force, acting as an infinite extension of Noah's 11-person team [Virtual"
+      ],
+      "has_t2": true
+    },
+    {
+      "name": "Oliver Kinross",
+      "slug": "oliver_kinross",
+      "employees": 120,
+      "fit_score": 7,
+      "fit_level": "High",
+      "pain_count": 4,
+      "type": "Large Exhibition Organizer",
+      "source": "me",
+      "contacts": [
+        {
+          "name": "Ian Chang",
+          "role": "Business Development Manager (Team Lead)"
+        },
+        {
+          "name": "Raphael Bas",
+          "role": "Data and Marketing Executive"
+        }
+      ],
+      "pains_t1": [],
+      "solution_t1": [
+        {
+          "pain": "Personalized Sales &amp; Marketing Outreach",
+          "weexpand": "Recommended application: generate first-draft outreach messages customized by company type, event role, sector, and likely business objective, then keep human review before sending."
+        },
+        {
+          "pain": "Reply Classification &amp; Next Actions",
+          "weexpand": "Recommended application: classify replies by interest level, meeting need, information request, or low priority so the team can follow up more consistently."
+        },
+        {
+          "pain": "Content Customisation",
+          "weexpand": "Recommended application: turn event information into draft LinkedIn posts, EDM copy, case summaries, proposal snippets, and post-event recap material."
+        },
+        {
+          "pain": "CRM / Internal Handover Summary",
+          "weexpand": "Recommended application: summarize client background, contact role, event context, possible pain points, and recommended next steps for sales and project teams."
+        }
+      ],
+      "outreach": "Oliver Kinross appears in the EMF contact export as a company in events services with keywords such as oil, gas, construction, sports, fitness, healthcare. Based on WeExpand&#x27;s confirmed focus on AI agents for business process automation in Sales &amp; Marketing, the most relevant starting point",
+      "has_t1": true
+    },
+    {
+      "name": "pyjama",
+      "slug": "pyjama",
+      "employees": 13,
+      "fit_score": 6,
+      "fit_level": "Medium",
+      "pain_count": 4,
+      "type": "Platform/Marketplace",
+      "source": "me",
+      "contacts": [
+        {
+          "name": "Samson Chan",
+          "role": "Events, Sales &amp; Licensing Supervisor"
+        },
+        {
+          "name": "Jason Kwok",
+          "role": "General Manager"
+        },
+        {
+          "name": "Phil Murphy",
+          "role": "Founder &amp; Group Managing Director"
+        }
+      ],
+      "pains_t1": [],
+      "solution_t1": [
+        {
+          "pain": "Personalized Sales &amp; Marketing Outreach",
+          "weexpand": "Recommended application: generate first-draft outreach messages customized by company type, event role, sector, and likely business objective, then keep human review before sending."
+        },
+        {
+          "pain": "Reply Classification &amp; Next Actions",
+          "weexpand": "Recommended application: classify replies by interest level, meeting need, information request, or low priority so the team can follow up more consistently."
+        },
+        {
+          "pain": "Content Customisation",
+          "weexpand": "Recommended application: turn event information into draft LinkedIn posts, EDM copy, case summaries, proposal snippets, and post-event recap material."
+        },
+        {
+          "pain": "CRM / Internal Handover Summary",
+          "weexpand": "Recommended application: summarize client background, contact role, event context, possible pain points, and recommended next steps for sales and project teams."
+        }
+      ],
+      "outreach": "pyjama appears in the EMF contact export as a company in events services with keywords such as marquees, event licensing, catering, av production, temporary staff, event tech. Based on WeExpand&#x27;s confirmed focus on AI agents for business process automation in Sales &amp; Marketing, the most rel",
+      "has_t1": true
+    },
+    {
+      "name": "ReThink HK",
+      "slug": "rethink_hk",
+      "employees": 16,
+      "fit_score": 8,
+      "fit_level": "High",
+      "pain_count": 5,
+      "type": "Conference/Niche Event Organizer",
+      "source": "me",
+      "contacts": [
+        {
+          "name": "Sandra Fang",
+          "role": "Senior Conference &amp; Marketing Executive"
+        },
+        {
+          "name": "Amina Guo",
+          "role": "Senior Event Sales Executive"
+        },
+        {
+          "name": "Jessica Chan",
+          "role": "Head of Marketing &amp; Partnerships"
+        },
+        {
+          "name": "Angela Pei",
+          "role": "Event Sales Specialist"
+        },
+        {
+          "name": "Eric Kwok",
+          "role": "Event Sales Manager"
+        },
+        {
+          "name": "Chris Brown",
+          "role": "Founder &amp; CEO"
+        }
+      ],
+      "pains_t1": [],
+      "solution_t1": [
+        {
+          "pain": "Personalized Sales &amp; Marketing Outreach",
+          "weexpand": "Recommended application: generate first-draft outreach messages customized by company type, event role, sector, and likely business objective, then keep human review before sending."
+        },
+        {
+          "pain": "Reply Classification &amp; Next Actions",
+          "weexpand": "Recommended application: classify replies by interest level, meeting need, information request, or low priority so the team can follow up more consistently."
+        },
+        {
+          "pain": "Content Customisation",
+          "weexpand": "Recommended application: turn event information into draft LinkedIn posts, EDM copy, case summaries, proposal snippets, and post-event recap material."
+        },
+        {
+          "pain": "CRM / Internal Handover Summary",
+          "weexpand": "Recommended application: summarize client background, contact role, event context, possible pain points, and recommended next steps for sales and project teams."
+        }
+      ],
+      "outreach": "ReThink HK appears in the EMF contact export as a company in events services with keywords such as csr, sustainability, environmental, partnerships, community, circular economy. Based on WeExpand&#x27;s confirmed focus on AI agents for business process automation in Sales &amp; Marketing, the most r",
+      "has_t1": true
+    },
+    {
+      "name": "Royal Plaza Hotel",
+      "slug": "royal_plaza_hotel",
+      "employees": 210,
+      "fit_score": 6,
+      "fit_level": "Medium",
+      "pain_count": 4,
+      "type": "Venue Operator",
+      "source": "me",
+      "contacts": [
+        {
+          "name": "Biamka Tse",
+          "role": "Director of Marketing Communications"
+        },
+        {
+          "name": "Kurt Leung",
+          "role": "Assistant Director of Business Development"
+        },
+        {
+          "name": "Vivian Chiu",
+          "role": "Senior Sales Manager"
+        },
+        {
+          "name": "Ramy Chow",
+          "role": "Senior Marketing Communications Manager"
+        }
+      ],
+      "pains_t1": [],
+      "solution_t1": [
+        {
+          "pain": "Personalized Sales &amp; Marketing Outreach",
+          "weexpand": "Recommended application: generate first-draft outreach messages customized by company type, event role, sector, and likely business objective, then keep human review before sending."
+        },
+        {
+          "pain": "Reply Classification &amp; Next Actions",
+          "weexpand": "Recommended application: classify replies by interest level, meeting need, information request, or low priority so the team can follow up more consistently."
+        },
+        {
+          "pain": "Content Customisation",
+          "weexpand": "Recommended application: turn event information into draft LinkedIn posts, EDM copy, case summaries, proposal snippets, and post-event recap material."
+        },
+        {
+          "pain": "CRM / Internal Handover Summary",
+          "weexpand": "Recommended application: summarize client background, contact role, event context, possible pain points, and recommended next steps for sales and project teams."
+        }
+      ],
+      "outreach": "Royal Plaza Hotel appears in the EMF contact export as a company in events services with keywords such as premium hospitality, service excellence, guest testimonials, swimming pool, lodging, b2c. Based on WeExpand&#x27;s confirmed focus on AI agents for business process automation in Sales &amp; Mar",
+      "has_t1": true
+    },
+    {
+      "name": "RX Global",
+      "slug": "rx_global",
+      "employees": 3300,
+      "fit_score": 9,
+      "fit_level": "High",
+      "pain_count": 5,
+      "type": "Large Exhibition Organizer",
+      "source": "me",
+      "contacts": [
+        {
+          "name": "Shermen Ho",
+          "role": "International Sales Director"
+        }
+      ],
+      "pains_t1": [],
+      "solution_t1": [
+        {
+          "pain": "Personalized Sales &amp; Marketing Outreach",
+          "weexpand": "Recommended application: generate first-draft outreach messages customized by company type, event role, sector, and likely business objective, then keep human review before sending."
+        },
+        {
+          "pain": "Reply Classification &amp; Next Actions",
+          "weexpand": "Recommended application: classify replies by interest level, meeting need, information request, or low priority so the team can follow up more consistently."
+        },
+        {
+          "pain": "Content Customisation",
+          "weexpand": "Recommended application: turn event information into draft LinkedIn posts, EDM copy, case summaries, proposal snippets, and post-event recap material."
+        },
+        {
+          "pain": "CRM / Internal Handover Summary",
+          "weexpand": "Recommended application: summarize client background, contact role, event context, possible pain points, and recommended next steps for sales and project teams."
+        }
+      ],
+      "outreach": "RX Global appears in the EMF contact export as a company in events services with keywords such as business, events, exhibitions, event profs, event technology, globalevents. Based on WeExpand&#x27;s confirmed focus on AI agents for business process automation in Sales &amp; Marketing, the most relev",
+      "has_t1": true
+    },
+    {
+      "name": "Serious Staging",
+      "slug": "serious_staging",
+      "employees": 22,
+      "fit_score": 5,
+      "fit_level": "Medium",
+      "pain_count": 4,
+      "type": "Event Production/Fabrication",
+      "source": "me",
+      "contacts": [
+        {
+          "name": "Eva Shum",
+          "role": "General Manager"
+        }
+      ],
+      "pains_t1": [],
+      "solution_t1": [
+        {
+          "pain": "Personalized Sales &amp; Marketing Outreach",
+          "weexpand": "Recommended application: generate first-draft outreach messages customized by company type, event role, sector, and likely business objective, then keep human review before sending."
+        },
+        {
+          "pain": "Reply Classification &amp; Next Actions",
+          "weexpand": "Recommended application: classify replies by interest level, meeting need, information request, or low priority so the team can follow up more consistently."
+        },
+        {
+          "pain": "Content Customisation",
+          "weexpand": "Recommended application: turn event information into draft LinkedIn posts, EDM copy, case summaries, proposal snippets, and post-event recap material."
+        },
+        {
+          "pain": "CRM / Internal Handover Summary",
+          "weexpand": "Recommended application: summarize client background, contact role, event context, possible pain points, and recommended next steps for sales and project teams."
+        }
+      ],
+      "outreach": "Serious Staging appears in the EMF contact export as a company in events services with keywords such as experiential design, event concept amp production, brand engagement, fashion show, nationwide events, store openings. Based on WeExpand&#x27;s confirmed focus on AI agents for business process aut",
+      "has_t1": true
+    },
+    {
+      "name": "ShowTex",
+      "slug": "showtex",
+      "employees": 130,
+      "fit_score": 5,
+      "fit_level": "Medium",
+      "pain_count": 4,
+      "type": "Event Production/Fabrication",
+      "source": "me",
+      "contacts": [
+        {
+          "name": "Penny Lee",
+          "role": "General Manager"
+        }
+      ],
+      "pains_t1": [],
+      "solution_t1": [
+        {
+          "pain": "Personalized Sales &amp; Marketing Outreach",
+          "weexpand": "Recommended application: generate first-draft outreach messages customized by company type, event role, sector, and likely business objective, then keep human review before sending."
+        },
+        {
+          "pain": "Reply Classification &amp; Next Actions",
+          "weexpand": "Recommended application: classify replies by interest level, meeting need, information request, or low priority so the team can follow up more consistently."
+        },
+        {
+          "pain": "Content Customisation",
+          "weexpand": "Recommended application: turn event information into draft LinkedIn posts, EDM copy, case summaries, proposal snippets, and post-event recap material."
+        },
+        {
+          "pain": "CRM / Internal Handover Summary",
+          "weexpand": "Recommended application: summarize client background, contact role, event context, possible pain points, and recommended next steps for sales and project teams."
+        }
+      ],
+      "outreach": "ShowTex appears in the EMF contact export as a company in events services with keywords such as glitter curtains, flameretardant fabrics, custom manufacturing, pipe drape, projection surfaces, rgb led video animation systems &amp; tracks. Based on WeExpand&#x27;s confirmed focus on AI agents for bus",
+      "has_t1": true
+    },
+    {
+      "name": "SuperAI",
+      "slug": "superai",
+      "employees": 20,
+      "fit_score": 9,
+      "fit_level": "High",
+      "pain_count": 5,
+      "type": "Conference/Niche Event Organizer",
+      "source": "me",
+      "contacts": [
+        {
+          "name": "Ella Cheng-Bradshaw",
+          "role": "Business Development Manager"
+        }
+      ],
+      "pains_t1": [],
+      "solution_t1": [
+        {
+          "pain": "Personalized Sales &amp; Marketing Outreach",
+          "weexpand": "Recommended application: generate first-draft outreach messages customized by company type, event role, sector, and likely business objective, then keep human review before sending."
+        },
+        {
+          "pain": "Reply Classification &amp; Next Actions",
+          "weexpand": "Recommended application: classify replies by interest level, meeting need, information request, or low priority so the team can follow up more consistently."
+        },
+        {
+          "pain": "Content Customisation",
+          "weexpand": "Recommended application: turn event information into draft LinkedIn posts, EDM copy, case summaries, proposal snippets, and post-event recap material."
+        },
+        {
+          "pain": "CRM / Internal Handover Summary",
+          "weexpand": "Recommended application: summarize client background, contact role, event context, possible pain points, and recommended next steps for sales and project teams."
+        }
+      ],
+      "outreach": "SuperAI appears in the EMF contact export as a company in events services with keywords such as ai ethics, consulting, web3 ai, ai in finance, ai conference, ai networking. Based on WeExpand&#x27;s confirmed focus on AI agents for business process automation in Sales &amp; Marketing, the most releva",
+      "has_t1": true
+    },
+    {
+      "name": "SYMA",
+      "slug": "syma",
+      "employees": 93,
+      "fit_score": 5,
+      "fit_level": "Medium",
+      "pain_count": 4,
+      "type": "Event Production/Fabrication",
+      "source": "me",
+      "contacts": [
+        {
+          "name": "Steven Brandt",
+          "role": "Regional Head of Sales"
+        }
+      ],
+      "pains_t1": [],
+      "solution_t1": [
+        {
+          "pain": "Personalized Sales &amp; Marketing Outreach",
+          "weexpand": "Recommended application: generate first-draft outreach messages customized by company type, event role, sector, and likely business objective, then keep human review before sending."
+        },
+        {
+          "pain": "Reply Classification &amp; Next Actions",
+          "weexpand": "Recommended application: classify replies by interest level, meeting need, information request, or low priority so the team can follow up more consistently."
+        },
+        {
+          "pain": "Content Customisation",
+          "weexpand": "Recommended application: turn event information into draft LinkedIn posts, EDM copy, case summaries, proposal snippets, and post-event recap material."
+        },
+        {
+          "pain": "CRM / Internal Handover Summary",
+          "weexpand": "Recommended application: summarize client background, contact role, event context, possible pain points, and recommended next steps for sales and project teams."
+        }
+      ],
+      "outreach": "SYMA appears in the EMF contact export as a company in events services with keywords such as messebau, messebausysteme, maschineneinhausungen, messemodulbau, individuelle messestaende, vitrinen. Based on WeExpand&#x27;s confirmed focus on AI agents for business process automation in Sales &amp; Mark",
+      "has_t1": true
+    },
+    {
+      "name": "Teamrite International Limited",
+      "slug": "teamrite_international_limited",
+      "employees": 14,
+      "fit_score": 6,
+      "fit_level": "Medium",
+      "pain_count": 4,
+      "type": "Creative/Marketing Agency",
+      "source": "me",
+      "contacts": [
+        {
+          "name": "Kelvin Chan",
+          "role": "Marketing Director"
+        }
+      ],
+      "pains_t1": [],
+      "solution_t1": [
+        {
+          "pain": "Personalized Sales &amp; Marketing Outreach",
+          "weexpand": "Recommended application: generate first-draft outreach messages customized by company type, event role, sector, and likely business objective, then keep human review before sending."
+        },
+        {
+          "pain": "Reply Classification &amp; Next Actions",
+          "weexpand": "Recommended application: classify replies by interest level, meeting need, information request, or low priority so the team can follow up more consistently."
+        },
+        {
+          "pain": "Content Customisation",
+          "weexpand": "Recommended application: turn event information into draft LinkedIn posts, EDM copy, case summaries, proposal snippets, and post-event recap material."
+        },
+        {
+          "pain": "CRM / Internal Handover Summary",
+          "weexpand": "Recommended application: summarize client background, contact role, event context, possible pain points, and recommended next steps for sales and project teams."
+        }
+      ],
+      "outreach": "Teamrite International Limited appears in the EMF contact export as a company in events services with keywords such as public relations, design and build, large-scale floral displays, event lighting design, cultural events, digital interaction design. Based on WeExpand&#x27;s confirmed focus on AI a",
+      "has_t1": true
+    },
+    {
+      "name": "The Adsale Group",
+      "slug": "the_adsale_group",
+      "employees": 170,
+      "fit_score": 9,
+      "fit_level": "High",
+      "pain_count": 5,
+      "type": "Large Exhibition Organizer",
+      "source": "me",
+      "contacts": [
+        {
+          "name": "Cynthia Lau",
+          "role": "Marketing Communications Manager"
+        },
+        {
+          "name": "Winnie Fung",
+          "role": "Deputy Marketing Communications Director"
+        },
+        {
+          "name": "Wayne Chan",
+          "role": "Assistant Manager Marketing Communications"
+        },
+        {
+          "name": "Julian So",
+          "role": "Senior Project Executive - Marketing Communications"
+        },
+        {
+          "name": "Helen Chan",
+          "role": "General Manager - Marketing Communications (Associations / Buyers Relations)"
+        },
+        {
+          "name": "Vincent Fong",
+          "role": "Assistant Marketing Manager - eMarketplace"
+        },
+        {
+          "name": "Ida Leung",
+          "role": "Assistant Marketing Communications Manager"
+        },
+        {
+          "name": "Annie Chu",
+          "role": "General Manager"
+        },
+        {
+          "name": "Cherry Lo",
+          "role": "Assistant Project Manager, Sales &amp; Marketing"
+        },
+        {
+          "name": "Adele Fung",
+          "role": "Senior Project Executive, Marketing Communications"
+        },
+        {
+          "name": "Cherry Chi",
+          "role": "Marketing Manager - International Buyers"
+        },
+        {
+          "name": "Winnie Tam",
+          "role": "Marketing Manager"
+        }
+      ],
+      "pains_t1": [],
+      "solution_t1": [
+        {
+          "pain": "Personalized Sales &amp; Marketing Outreach",
+          "weexpand": "Recommended application: generate first-draft outreach messages customized by company type, event role, sector, and likely business objective, then keep human review before sending."
+        },
+        {
+          "pain": "Reply Classification &amp; Next Actions",
+          "weexpand": "Recommended application: classify replies by interest level, meeting need, information request, or low priority so the team can follow up more consistently."
+        },
+        {
+          "pain": "Content Customisation",
+          "weexpand": "Recommended application: turn event information into draft LinkedIn posts, EDM copy, case summaries, proposal snippets, and post-event recap material."
+        },
+        {
+          "pain": "CRM / Internal Handover Summary",
+          "weexpand": "Recommended application: summarize client background, contact role, event context, possible pain points, and recommended next steps for sales and project teams."
+        }
+      ],
+      "outreach": "The Adsale Group appears in the EMF contact export as a company in events services with keywords such as industrial trade show, publishing, conference, plastics, rubber, textile. Based on WeExpand&#x27;s confirmed focus on AI agents for business process automation in Sales &amp; Marketing, the most ",
+      "has_t1": true
+    },
+    {
+      "name": "TOKEN2049",
+      "slug": "token2049",
+      "employees": 36,
+      "fit_score": 9,
+      "fit_level": "High",
+      "pain_count": 5,
+      "type": "Conference/Niche Event Organizer",
+      "source": "me",
+      "contacts": [
+        {
+          "name": "Tracy Thai",
+          "role": "Head of Business Development"
+        },
+        {
+          "name": "Alexander Fiskum",
+          "role": "Co-Founder"
+        }
+      ],
+      "pains_t1": [],
+      "solution_t1": [
+        {
+          "pain": "Personalized Sales &amp; Marketing Outreach",
+          "weexpand": "Recommended application: generate first-draft outreach messages customized by company type, event role, sector, and likely business objective, then keep human review before sending."
+        },
+        {
+          "pain": "Reply Classification &amp; Next Actions",
+          "weexpand": "Recommended application: classify replies by interest level, meeting need, information request, or low priority so the team can follow up more consistently."
+        },
+        {
+          "pain": "Content Customisation",
+          "weexpand": "Recommended application: turn event information into draft LinkedIn posts, EDM copy, case summaries, proposal snippets, and post-event recap material."
+        },
+        {
+          "pain": "CRM / Internal Handover Summary",
+          "weexpand": "Recommended application: summarize client background, contact role, event context, possible pain points, and recommended next steps for sales and project teams."
+        }
+      ],
+      "outreach": "TOKEN2049 appears in the EMF contact export as a company in events services with keywords such as tech conference, blockchain, cryptocurrencies, bitcoin, ethereum, token. Based on WeExpand&#x27;s confirmed focus on AI agents for business process automation in Sales &amp; Marketing, the most relevant",
+      "has_t1": true
+    },
+    {
+      "name": "XX Management",
+      "slug": "xx-management",
+      "employees": 0,
+      "fit_score": 0,
+      "fit_level": "N/A",
+      "pain_count": 0,
+      "type": "Unknown",
+      "source": "teamate1",
+      "has_t1": true,
+      "contacts": [
+        {
+          "name": "Cris Ca",
+          "role": "CEO"
+        }
+      ],
+      "pains_t1": [],
+      "outreach": "XX Management appears in the EMF contact export as a company in events services. Based on WeExpand&#x27;s confirmed focus on AI agents for business process automation in Sales &amp; Marketing, the most relevant starting point would be AI-supported personalized outreach, reply classification, customi"
+    },
+    {
+      "name": "Kenfair Exhibition Limited",
+      "slug": "kenfair-exhibition-limited",
+      "employees": 35,
+      "fit_score": 0,
+      "fit_level": "N/A",
+      "pain_count": 0,
+      "type": "Unknown",
+      "source": "teamate2",
+      "has_t2": true,
+      "challenges_t2": [],
+      "insights_t2": []
+    }
+  ]
+}
