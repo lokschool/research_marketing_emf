@@ -440,9 +440,9 @@ new Chart(document.getElementById('empSizeChart'), {{
 new Chart(document.getElementById('fitDistChart'), {{
     type: 'doughnut',
     data: {{
-        labels: ['High Fit','Medium Fit','Low/N/A'],
+        labels: ['High Fit','Medium Fit','Low'],
         datasets: [{{
-            data: [{data['fit_distribution']['High']},{data['fit_distribution']['Medium']},{data['fit_distribution']['Low/N/A']}],
+            data: [{data['fit_distribution']['High']},{data['fit_distribution']['Medium']},{data['fit_distribution'].get('Low',0)}],
             backgroundColor: ['#27ae60','#f39c12','#95a5a6'],
             borderWidth: 2,
             borderColor: '#fff'

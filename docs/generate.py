@@ -969,7 +969,7 @@ def generate_summary_data(companies_data):
     cat_counts = Counter()
     urgency_counts = Counter()
     emp_groups = {"Micro (1-20)": 0, "Small (21-100)": 0, "Medium (101-500)": 0, "Large (501+)": 0}
-    fit_dist = {"High": 0, "Medium": 0, "Low/N/A": 0}
+    fit_dist = {"High": 0, "Medium": 0, "Low": 0}
     total_pains = 0
     total_emp = 0
     enriched = []
@@ -984,7 +984,11 @@ def generate_summary_data(companies_data):
         elif emp <= 500: emp_groups["Medium (101-500)"] += 1
         else: emp_groups["Large (501+)"] += 1
         
-        fit_dist[c["fit_level"] if c["fit_level"] != "N/A" else "Low/N/A"] += 1
+        fl = c["fit_level"] if c["fit_level"] != "N/A" else "Low"
+        if fl in fit_dist:
+            fit_dist[fl] += 1
+        else:
+            fit_dist["Low"] += 1
         
         # Determine company type
         slug = c["slug"]
