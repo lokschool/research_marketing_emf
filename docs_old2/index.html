@@ -1,0 +1,119 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Market Intelligence</title><style>:root {
+    --ink: #1e293b; --slate: #475569; --muted: #94a3b8; --line: #e2e8f0;
+    --bg: #fff; --surface: #f8fafc; --card: #fff;
+    --blue: #2563eb; --teal: #0d9488; --amber: #d97706; --red: #dc2626;
+    --green: #16a34a; --purple: #7c3aed;
+    --radius: 8px; --shadow: 0 1px 3px rgba(0,0,0,0.06);
+    --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: var(--sans); font-size: 15px; line-height: 1.65; color: var(--ink); background: var(--surface); }
+  .container { max-width: 1040px; margin: 0 auto; padding: 0 28px; }
+  a { color: var(--blue); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .page-header { background: var(--ink); color: #fff; padding: 20px 0; border-bottom: 3px solid var(--blue); }
+  .page-header .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+  .page-header h1 { font-size: 1.15rem; font-weight: 600; color: #fff; }
+  .page-header a { color: rgba(255,255,255,0.75); font-size: 0.82rem; }
+  .hero { background: var(--ink); color: #fff; padding: 56px 0 48px; }
+  .hero .company-name { font-size: 2rem; font-weight: 700; }
+  .hero .tagline { font-size: 0.95rem; opacity: 0.75; margin: 8px 0 24px; }
+  .hero .stats { display: flex; gap: 12px; flex-wrap: wrap; }
+  .hero .stat { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 12px 20px; }
+  .hero .stat-label { font-size: 0.65rem; text-transform: uppercase; opacity: 0.6; letter-spacing: 0.08em; }
+  .hero .stat-value { font-size: 1.3rem; font-weight: 700; }
+  .dashboard-hero { background: var(--ink); color: #fff; padding: 64px 0 56px; text-align: center; }
+  .dashboard-hero h1 { font-size: 2.2rem; font-weight: 700; color: #fff; }
+  .dashboard-hero .subtitle { font-size: 1rem; opacity: 0.7; max-width: 640px; margin: 10px auto 0; }
+  .stat-bar { display: flex; justify-content: center; gap: 48px; margin-top: 32px; flex-wrap: wrap; }
+  .stat-item { text-align: center; }
+  .stat-num { font-size: 2rem; font-weight: 700; }
+  .stat-label { font-size: 0.72rem; opacity: 0.6; text-transform: uppercase; letter-spacing: 0.08em; }
+  .tab-nav { background: #fff; border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 50; }
+  .tab-nav .container { display: flex; gap: 0; overflow-x: auto; }
+  .tab-btn { padding: 12px 20px; border: none; background: none; cursor: pointer; font-size: 0.82rem; font-weight: 500; color: var(--slate); border-bottom: 2px solid transparent; transition: all 0.15s; white-space: nowrap; }
+  .tab-btn.active { color: var(--blue); border-bottom-color: var(--blue); }
+  main { padding: 48px 0 72px; background: #fff; color: var(--ink); }
+  .section { margin-bottom: 48px; }
+  .section-title { font-size: 1.25rem; font-weight: 700; color: var(--ink); margin-bottom: 20px; padding-bottom: 8px; border-bottom: 2px solid var(--line); }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; margin-bottom: 16px; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+  @media (max-width: 768px) { .two-col { grid-template-columns: 1fr; } }
+  .tag { display: inline-block; padding: 2px 10px; border-radius: 12px; font-size: 0.7rem; font-weight: 600; margin: 2px 4px; }
+  .tag-high { background: #fef2f2; color: var(--red); }
+  .tag-mid { background: #fffbeb; color: var(--amber); }
+  .tag-low { background: #f0fdf4; color: var(--green); }
+  .cat-pre { background: #fef3c7; color: #92400e; }
+  .cat-during { background: #dbeafe; color: #1e40af; }
+  .cat-post { background: #ede9fe; color: #6b21a8; }
+  .cat-cross { background: #f1f5f9; color: #475569; }
+  .pain-point { border-left: 3px solid var(--blue); padding-left: 20px; margin-bottom: 32px; }
+  .pain-point h4 { color: var(--ink); font-size: 1rem; margin-bottom: 4px; font-weight: 600; }
+  .claim-box { background: #fefce8; border: 1px solid #fde68a; border-radius: 6px; padding: 10px 14px; margin: 10px 0; font-size: 0.88rem; }
+  .evidence-box { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 6px; padding: 10px 14px; margin: 10px 0; font-size: 0.85rem; }
+  .analysis-box { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 6px; padding: 10px 14px; margin: 10px 0; font-size: 0.82rem; color: var(--slate); }
+  .opportunity-note { margin: 10px 0; font-size: 0.9rem; }
+  .methodology-note { font-size: 0.78rem; color: var(--slate); margin: 6px 0 0 0; font-style: italic; }
+  .opportunity-card { background: linear-gradient(135deg, var(--blue), var(--purple)); color: #fff; border-radius: var(--radius); padding: 28px; margin: 24px 0; }
+  .opportunity-card h3 { color: #fff; font-size: 1.15rem; margin-bottom: 8px; }
+  .opportunity-card .score { font-size: 2.5rem; font-weight: 700; margin: 4px 0; }
+  .opportunity-card ul { margin: 10px 0 0 18px; opacity: 0.9; }
+  .opportunity-card li { margin-bottom: 6px; font-size: 0.88rem; }
+  .evidence-list { list-style: none; padding: 0; }
+  .evidence-list li { padding: 8px 12px; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; font-size: 0.82rem; }
+  .evidence-list .claim { flex: 2; }
+  .evidence-list .source { flex: 1; font-size: 0.75rem; color: var(--slate); text-align: right; white-space: nowrap; }
+  .chart-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0; }
+  .chart-panel { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; }
+  .chart-panel canvas { max-height: 260px; }
+  .chart-panel.full { grid-column: 1 / -1; }
+  @media (max-width: 768px) { .chart-row { grid-template-columns: 1fr; } }
+  .profile-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 16px; }
+  .pcard { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 18px; }
+  .pkey { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--slate); }
+  .pval { font-size: 0.9rem; font-weight: 600; color: var(--ink); margin-top: 2px; }
+  .sell-dim { margin: 16px 0; }
+  .sell-dim .row { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; font-size: 0.85rem; }
+  .sell-dim .lbl { min-width: 100px; text-align: right; color: var(--slate); font-weight: 500; font-size: 0.8rem; }
+  .sell-dim .track { flex: 1; height: 6px; background: var(--line); border-radius: 3px; overflow: hidden; }
+  .sell-dim .fill { height: 100%; background: var(--blue); border-radius: 3px; }
+  .company-table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.85rem; }
+  .company-table th { background: var(--surface); color: var(--slate); padding: 10px 14px; text-align: left; font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; border-bottom: 2px solid var(--line); }
+  .company-table td { padding: 10px 14px; border-bottom: 1px solid var(--line); }
+  .company-table tr:hover { background: var(--surface); }
+  .rank { font-weight: 700; color: var(--slate); text-align: center; }
+  .nav-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 20px 0; }
+  .nav-card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; text-decoration: none; color: var(--ink); transition: all 0.15s; display: block; }
+  .nav-card:hover { border-color: var(--blue); text-decoration: none; }
+  .nav-icon { font-size: 1.5rem; margin-bottom: 6px; }
+  .nav-name { font-weight: 600; font-size: 0.95rem; color: var(--ink); }
+  .nav-meta { font-size: 0.78rem; color: var(--slate); margin-top: 2px; }
+  .insight-box { border-left: 3px solid var(--blue); padding: 14px 18px; margin: 14px 0; background: #eff6ff; border-radius: 0 var(--radius) var(--radius) 0; }
+  .insight-box.red { border-left-color: var(--red); background: #fef2f2; }
+  .insight-box.green { border-left-color: var(--green); background: #f0fdf4; }
+  .insight-box.amber { border-left-color: var(--amber); background: #fffbeb; }
+  .insight-box h3 { font-size: 0.92rem; margin-bottom: 6px; }
+  .insight-box p, .insight-box li { font-size: 0.85rem; color: var(--slate); line-height: 1.5; }
+  .report-links { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; margin: 20px 0; }
+  .link-card { display: block; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; text-decoration: none; color: var(--ink); transition: all 0.15s; }
+  .link-card:hover { border-color: var(--blue); text-decoration: none; }
+  .link-card .name { font-weight: 600; font-size: 0.92rem; color: var(--ink); margin-bottom: 2px; }
+  .link-card .score { font-size: 1.4rem; font-weight: 700; color: var(--blue); margin-top: 4px; }
+  .link-card .meta { font-size: 0.75rem; color: var(--slate); }
+  footer { background: var(--ink); color: rgba(255,255,255,0.6); text-align: center; padding: 20px; font-size: 0.82rem; }
+  footer a { color: rgba(255,255,255,0.6); }
+  @media (max-width: 640px) {
+    .dashboard-hero h1 { font-size: 1.6rem; }
+    .hero .company-name { font-size: 1.4rem; }
+    .nav-cards { grid-template-columns: 1fr; }
+    .two-col, .chart-row, .profile-cards { grid-template-columns: 1fr; }
+  }
+
+  .cat-pre { background: #fef3c7; color: #92400e; }
+  .cat-during { background: #dbeafe; color: #1e40af; }
+  .cat-post { background: #ede9fe; color: #6b21a8; }
+  .cat-cross { background: #f3f4f6; color: #4b5563; }
+.md-table{width:100%;border-collapse:collapse;margin:8px 0;font-size:.85rem}.md-table th{background:var(--surface);text-align:left;padding:6px 10px;border-bottom:2px solid var(--line);font-weight:600;color:var(--ink)}.md-table td{padding:6px 10px;border-bottom:1px solid var(--line);color:var(--slate)}.md-table tr:hover{background:var(--surface)}
+.chart-title{font-size:0.8rem;font-weight:700;color:var(--ink);margin-bottom:8px;text-align:center}.chart-desc{font-size:0.76rem;color:var(--muted);margin-top:8px;text-align:center;line-height:1.4}
+.impact-box{background:#fef3c7;border-left:4px solid var(--amber);padding:10px 14px;margin:6px 0;font-size:.85rem;line-height:1.5;border-radius:4px}.impact-box strong{color:var(--amber)}.proof-box{background:#e8f5e9;border-left:4px solid var(--green);padding:10px 14px;margin:6px 0;font-size:.83rem;line-height:1.5;border-radius:4px}.proof-box strong{color:var(--green)}.solution-box{background:#e3f2fd;border-left:4px solid var(--blue);padding:10px 14px;margin:6px 0;font-size:.85rem;line-height:1.5;border-radius:4px}.solution-box strong{color:var(--blue)}.discovery-box{background:var(--surface);border-left:4px solid var(--muted);padding:10px 14px;margin:6px 0;font-size:.8rem;line-height:1.5;border-radius:4px}.discovery-box strong{color:var(--ink)}
+.report-links{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;margin:24px 0}.link-card{display:block;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px;text-decoration:none;color:var(--ink)}.link-card:hover{border-color:var(--blue);text-decoration:none}.link-card .name{font-weight:600}.link-card .score{font-size:1.4rem;font-weight:700;color:var(--blue);margin-top:6px}</style></head><body><header class="page-header"><div class="container"><h1>Market Intelligence</h1><div><a href="summary.html">Summary</a><a href="industry.html" style="margin-left:16px">Industry</a><a href="methodology.html" style="margin-left:16px">Methodology</a></div></div></header><div class="dashboard-hero"><div class="container"><h1>Market Intelligence</h1><div class="subtitle">46 companies</div><div class="stat-bar"><div class="stat-item"><div class="stat-num">46</div><div class="stat-label">Companies</div></div><div class="stat-item"><div class="stat-num" style="color:var(--blue)">7745</div><div class="stat-label">Evidence</div></div></div></div></div><main><div class="container"><div class="nav-cards"><a href="summary.html" class="nav-card"><div class="nav-icon">📊</div><div class="nav-name">Summary</div></a><a href="industry.html" class="nav-card"><div class="nav-icon">🏭</div><div class="nav-name">Industry</div></a><a href="methodology.html" class="nav-card"><div class="nav-icon">⚙️</div><div class="nav-name">Methodology</div></a></div><h2 class="section-title">Companies</h2><div class="report-links"><a href="1000Meetings/index.html" class="link-card"><div class="name">1000Meetings</div><div class="score">63%</div></a><a href="121 Group/index.html" class="link-card"><div class="name">121 Group</div><div class="score">56%</div></a><a href="APLF/index.html" class="link-card"><div class="name">APLF</div><div class="score">71%</div></a><a href="Artcom/index.html" class="link-card"><div class="name">Artcom</div><div class="score">68%</div></a><a href="AsiaWorld-Expo Management Limited/index.html" class="link-card"><div class="name">AsiaWorld-Expo Management Limited</div><div class="score">76%</div></a><a href="Beacon Events/index.html" class="link-card"><div class="name">Beacon Events</div><div class="score">71%</div></a><a href="BEYOND Expo/index.html" class="link-card"><div class="name">BEYOND Expo</div><div class="score">70%</div></a><a href="Branded/index.html" class="link-card"><div class="name">Branded</div><div class="score">71%</div></a><a href="China International Beauty Expo/index.html" class="link-card"><div class="name">China International Beauty Expo</div><div class="score">69%</div></a><a href="Chunky Onion Productions Limited/index.html" class="link-card"><div class="name">Chunky Onion Productions Limited</div><div class="score">71%</div></a><a href="Clarion Events/index.html" class="link-card"><div class="name">Clarion Events</div><div class="score">82%</div></a><a href="CloserStill Media/index.html" class="link-card"><div class="name">CloserStill Media</div><div class="score">76%</div></a><a href="Comasia Limited/index.html" class="link-card"><div class="name">Comasia Limited</div><div class="score">72%</div></a><a href="Eventist/index.html" class="link-card"><div class="name">Eventist</div><div class="score">77%</div></a><a href="EventWorks/index.html" class="link-card"><div class="name">EventWorks</div><div class="score">76%</div></a><a href="EX-R International/index.html" class="link-card"><div class="name">EX-R International</div><div class="score">64%</div></a><a href="expomobilia GmbH/index.html" class="link-card"><div class="name">expomobilia GmbH</div><div class="score">72%</div></a><a href="Filament Limited/index.html" class="link-card"><div class="name">Filament Limited</div><div class="score">73%</div></a><a href="FUEL/index.html" class="link-card"><div class="name">FUEL</div><div class="score">72%</div></a><a href="GL events/index.html" class="link-card"><div class="name">GL events</div><div class="score">76%</div></a><a href="GL events Hong Kong/index.html" class="link-card"><div class="name">GL events Hong Kong</div><div class="score">67%</div></a><a href="Hong Kong Convention and Exhibition Centre (Management) Limited/index.html" class="link-card"><div class="name">Hong Kong Convention and Exhibition Centre (Management) Limited</div><div class="score">59%</div></a><a href="InfoCommAsia Pte Ltd/index.html" class="link-card"><div class="name">InfoCommAsia Pte Ltd</div><div class="score">65%</div></a><a href="Informa Markets/index.html" class="link-card"><div class="name">Informa Markets</div><div class="score">72%</div></a><a href="ISS-Vision Events/index.html" class="link-card"><div class="name">ISS-Vision Events</div><div class="score">72%</div></a><a href="JEC/index.html" class="link-card"><div class="name">JEC</div><div class="score">62%</div></a><a href="Kai Tak Sports Park/index.html" class="link-card"><div class="name">Kai Tak Sports Park</div><div class="score">68%</div></a><a href="KEYS/index.html" class="link-card"><div class="name">KEYS</div><div class="score">71%</div></a><a href="Leader Associates/index.html" class="link-card"><div class="name">Leader Associates</div><div class="score">72%</div></a><a href="Marintec China/index.html" class="link-card"><div class="name">Marintec China</div><div class="score">69%</div></a><a href="Messe Frankfurt (Shanghai) Co Ltd/index.html" class="link-card"><div class="name">Messe Frankfurt (Shanghai) Co Ltd</div><div class="score">56%</div></a><a href="Milton Exhibits/index.html" class="link-card"><div class="name">Milton Exhibits</div><div class="score">73%</div></a><a href="Mykar Events/index.html" class="link-card"><div class="name">Mykar Events</div><div class="score">68%</div></a><a href="Noah (Asia) Limited - Marketing Agency/index.html" class="link-card"><div class="name">Noah (Asia) Limited - Marketing Agency</div><div class="score">70%</div></a><a href="Oliver Kinross/index.html" class="link-card"><div class="name">Oliver Kinross</div><div class="score">66%</div></a><a href="pyjama/index.html" class="link-card"><div class="name">pyjama</div><div class="score">61%</div></a><a href="ReThink HK/index.html" class="link-card"><div class="name">ReThink HK</div><div class="score">60%</div></a><a href="Royal Plaza Hotel/index.html" class="link-card"><div class="name">Royal Plaza Hotel</div><div class="score">61%</div></a><a href="RX Global/index.html" class="link-card"><div class="name">RX Global</div><div class="score">84%</div></a><a href="Serious Staging/index.html" class="link-card"><div class="name">Serious Staging</div><div class="score">67%</div></a><a href="ShowTex/index.html" class="link-card"><div class="name">ShowTex</div><div class="score">69%</div></a><a href="SuperAI/index.html" class="link-card"><div class="name">SuperAI</div><div class="score">70%</div></a><a href="SYMA/index.html" class="link-card"><div class="name">SYMA</div><div class="score">66%</div></a><a href="Teamrite International Limited/index.html" class="link-card"><div class="name">Teamrite International Limited</div><div class="score">69%</div></a><a href="The Adsale Group/index.html" class="link-card"><div class="name">The Adsale Group</div><div class="score">78%</div></a><a href="TOKEN2049/index.html" class="link-card"><div class="name">TOKEN2049</div><div class="score">74%</div></a></div><div class="card"><p>Market intelligence covering 46 companies. Evidence-backed.</p></div></div></main><footer><div class="container">GenEd v0.2</div></footer></body></html>
