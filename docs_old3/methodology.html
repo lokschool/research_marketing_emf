@@ -1,0 +1,122 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Methodology</title><style>:root {
+    --ink: #1e293b; --slate: #475569; --muted: #94a3b8; --line: #e2e8f0;
+    --bg: #fff; --surface: #f8fafc; --card: #fff;
+    --blue: #2563eb; --teal: #0d9488; --amber: #d97706; --red: #dc2626;
+    --green: #16a34a; --purple: #7c3aed;
+    --radius: 8px; --shadow: 0 1px 3px rgba(0,0,0,0.06);
+    --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: var(--sans); font-size: 15px; line-height: 1.65; color: var(--ink); background: var(--surface); }
+  .container { max-width: 1040px; margin: 0 auto; padding: 0 28px; }
+  a { color: var(--blue); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .page-header { background: var(--ink); color: #fff; padding: 20px 0; border-bottom: 3px solid var(--blue); }
+  .page-header .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+  .page-header h1 { font-size: 1.15rem; font-weight: 600; color: #fff; }
+  .page-header a { color: rgba(255,255,255,0.75); font-size: 0.82rem; }
+  .hero { background: var(--ink); color: #fff; padding: 56px 0 48px; }
+  .hero .company-name { font-size: 2rem; font-weight: 700; }
+  .hero .tagline { font-size: 0.95rem; opacity: 0.75; margin: 8px 0 24px; }
+  .hero .stats { display: flex; gap: 12px; flex-wrap: wrap; }
+  .hero .stat { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 12px 20px; }
+  .hero .stat-label { font-size: 0.65rem; text-transform: uppercase; opacity: 0.6; letter-spacing: 0.08em; }
+  .hero .stat-value { font-size: 1.3rem; font-weight: 700; }
+  .dashboard-hero { background: var(--ink); color: #fff; padding: 64px 0 56px; text-align: center; }
+  .dashboard-hero h1 { font-size: 2.2rem; font-weight: 700; color: #fff; }
+  .dashboard-hero .subtitle { font-size: 1rem; opacity: 0.7; max-width: 640px; margin: 10px auto 0; }
+  .stat-bar { display: flex; justify-content: center; gap: 48px; margin-top: 32px; flex-wrap: wrap; }
+  .stat-item { text-align: center; }
+  .stat-num { font-size: 2rem; font-weight: 700; }
+  .stat-label { font-size: 0.72rem; opacity: 0.6; text-transform: uppercase; letter-spacing: 0.08em; }
+  .tab-nav { background: #fff; border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 50; }
+  .tab-nav .container { display: flex; gap: 0; overflow-x: auto; }
+  .tab-btn { padding: 12px 20px; border: none; background: none; cursor: pointer; font-size: 0.82rem; font-weight: 500; color: var(--slate); border-bottom: 2px solid transparent; transition: all 0.15s; white-space: nowrap; }
+  .tab-btn.active { color: var(--blue); border-bottom-color: var(--blue); }
+  main { padding: 48px 0 72px; background: #fff; color: var(--ink); }
+  .section { margin-bottom: 48px; }
+  .section-title { font-size: 1.25rem; font-weight: 700; color: var(--ink); margin-bottom: 20px; padding-bottom: 8px; border-bottom: 2px solid var(--line); }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; margin-bottom: 16px; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+  @media (max-width: 768px) { .two-col { grid-template-columns: 1fr; } }
+  .tag { display: inline-block; padding: 2px 10px; border-radius: 12px; font-size: 0.7rem; font-weight: 600; margin: 2px 4px; }
+  .tag-high { background: #fef2f2; color: var(--red); }
+  .tag-mid { background: #fffbeb; color: var(--amber); }
+  .tag-low { background: #f0fdf4; color: var(--green); }
+  .cat-pre { background: #fef3c7; color: #92400e; }
+  .cat-during { background: #dbeafe; color: #1e40af; }
+  .cat-post { background: #ede9fe; color: #6b21a8; }
+  .cat-cross { background: #f1f5f9; color: #475569; }
+  .pain-point { border-left: 3px solid var(--blue); padding-left: 20px; margin-bottom: 32px; }
+  .pain-point h4 { color: var(--ink); font-size: 1rem; margin-bottom: 4px; font-weight: 600; }
+  .claim-box { background: #fefce8; border: 1px solid #fde68a; border-radius: 6px; padding: 10px 14px; margin: 10px 0; font-size: 0.88rem; }
+  .evidence-box { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 6px; padding: 10px 14px; margin: 10px 0; font-size: 0.85rem; }
+  .analysis-box { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 6px; padding: 10px 14px; margin: 10px 0; font-size: 0.82rem; color: var(--slate); }
+  .opportunity-note { margin: 10px 0; font-size: 0.9rem; }
+  .methodology-note { font-size: 0.78rem; color: var(--slate); margin: 6px 0 0 0; font-style: italic; }
+  .opportunity-card { background: linear-gradient(135deg, var(--blue), var(--purple)); color: #fff; border-radius: var(--radius); padding: 28px; margin: 24px 0; }
+  .opportunity-card h3 { color: #fff; font-size: 1.15rem; margin-bottom: 8px; }
+  .opportunity-card .score { font-size: 2.5rem; font-weight: 700; margin: 4px 0; }
+  .opportunity-card ul { margin: 10px 0 0 18px; opacity: 0.9; }
+  .opportunity-card li { margin-bottom: 6px; font-size: 0.88rem; }
+  .evidence-list { list-style: none; padding: 0; }
+  .evidence-list li { padding: 8px 12px; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; font-size: 0.82rem; }
+  .evidence-list .claim { flex: 2; }
+  .evidence-list .source { flex: 1; font-size: 0.75rem; color: var(--slate); text-align: right; white-space: nowrap; }
+  .chart-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0; }
+  .chart-panel { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; }
+  .chart-panel canvas { max-height: 260px; }
+  .chart-panel.full { grid-column: 1 / -1; }
+  @media (max-width: 768px) { .chart-row { grid-template-columns: 1fr; } }
+  .profile-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 16px; }
+  .pcard { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 18px; }
+  .pkey { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--slate); }
+  .pval { font-size: 0.9rem; font-weight: 600; color: var(--ink); margin-top: 2px; }
+  .sell-dim { margin: 16px 0; }
+  .sell-dim .row { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; font-size: 0.85rem; }
+  .sell-dim .lbl { min-width: 100px; text-align: right; color: var(--slate); font-weight: 500; font-size: 0.8rem; }
+  .sell-dim .track { flex: 1; height: 6px; background: var(--line); border-radius: 3px; overflow: hidden; }
+  .sell-dim .fill { height: 100%; background: var(--blue); border-radius: 3px; }
+  .company-table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.85rem; }
+  .company-table th { background: var(--surface); color: var(--slate); padding: 10px 14px; text-align: left; font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; border-bottom: 2px solid var(--line); }
+  .company-table td { padding: 10px 14px; border-bottom: 1px solid var(--line); }
+  .company-table tr:hover { background: var(--surface); }
+  .rank { font-weight: 700; color: var(--slate); text-align: center; }
+  .nav-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 20px 0; }
+  .nav-card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; text-decoration: none; color: var(--ink); transition: all 0.15s; display: block; }
+  .nav-card:hover { border-color: var(--blue); text-decoration: none; }
+  .nav-icon { font-size: 1.5rem; margin-bottom: 6px; }
+  .nav-name { font-weight: 600; font-size: 0.95rem; color: var(--ink); }
+  .nav-meta { font-size: 0.78rem; color: var(--slate); margin-top: 2px; }
+  .insight-box { border-left: 3px solid var(--blue); padding: 14px 18px; margin: 14px 0; background: #eff6ff; border-radius: 0 var(--radius) var(--radius) 0; }
+  .insight-box.red { border-left-color: var(--red); background: #fef2f2; }
+  .insight-box.green { border-left-color: var(--green); background: #f0fdf4; }
+  .insight-box.amber { border-left-color: var(--amber); background: #fffbeb; }
+  .insight-box h3 { font-size: 0.92rem; margin-bottom: 6px; }
+  .insight-box p, .insight-box li { font-size: 0.85rem; color: var(--slate); line-height: 1.5; }
+  .report-links { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; margin: 20px 0; }
+  .link-card { display: block; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; text-decoration: none; color: var(--ink); transition: all 0.15s; }
+  .link-card:hover { border-color: var(--blue); text-decoration: none; }
+  .link-card .name { font-weight: 600; font-size: 0.92rem; color: var(--ink); margin-bottom: 2px; }
+  .link-card .score { font-size: 1.4rem; font-weight: 700; color: var(--blue); margin-top: 4px; }
+  .link-card .meta { font-size: 0.75rem; color: var(--slate); }
+  footer { background: var(--ink); color: rgba(255,255,255,0.6); text-align: center; padding: 20px; font-size: 0.82rem; }
+  footer a { color: rgba(255,255,255,0.6); }
+  @media (max-width: 640px) {
+    .dashboard-hero h1 { font-size: 1.6rem; }
+    .hero .company-name { font-size: 1.4rem; }
+    .nav-cards { grid-template-columns: 1fr; }
+    .two-col, .chart-row, .profile-cards { grid-template-columns: 1fr; }
+  }
+
+  .cat-pre { background: #fef3c7; color: #92400e; }
+  .cat-during { background: #dbeafe; color: #1e40af; }
+  .cat-post { background: #ede9fe; color: #6b21a8; }
+  .cat-cross { background: #f3f4f6; color: #4b5563; }
+.md-table{width:100%;border-collapse:collapse;margin:8px 0;font-size:.85rem}.md-table th{background:var(--surface);text-align:left;padding:6px 10px;border-bottom:2px solid var(--line);font-weight:600;color:var(--ink)}.md-table td{padding:6px 10px;border-bottom:1px solid var(--line);color:var(--slate)}.md-table tr:hover{background:var(--surface)}
+.chart-title{font-size:0.8rem;font-weight:700;color:var(--ink);margin-bottom:8px;text-align:center}.chart-desc{font-size:0.76rem;color:var(--muted);margin-top:8px;text-align:center;line-height:1.4}
+.impact-box{background:#fef3c7;border-left:4px solid var(--amber);padding:10px 14px;margin:6px 0;font-size:.85rem;line-height:1.5;border-radius:4px}.impact-box strong{color:var(--amber)}.proof-box{background:#e8f5e9;border-left:4px solid var(--green);padding:10px 14px;margin:6px 0;font-size:.83rem;line-height:1.5;border-radius:4px}.proof-box strong{color:var(--green)}.solution-box{background:#e3f2fd;border-left:4px solid var(--blue);padding:10px 14px;margin:6px 0;font-size:.85rem;line-height:1.5;border-radius:4px}.solution-box strong{color:var(--blue)}.discovery-box{background:var(--surface);border-left:4px solid var(--muted);padding:10px 14px;margin:6px 0;font-size:.8rem;line-height:1.5;border-radius:4px}.discovery-box strong{color:var(--ink)}
+.flow{margin:24px 0}.flow-grid{display:grid;grid-template-columns:1fr auto 1fr auto 1fr auto 1fr;gap:12px}@media(max-width:768px){.flow-grid{grid-template-columns:1fr}.flow-phase{background:var(--card);border:1px solid var(--line);padding:16px;border-radius:var(--radius)}.flow-phase .ph{font-size:.72rem;text-transform:uppercase;color:var(--muted)}.flow-phase .nm{font-weight:700;margin:4px 0}.flow-phase .detail{font-size:.8rem;color:var(--slate);line-height:1.4}.flow-arrow{font-size:1.5rem;color:var(--muted);text-align:center;align-self:center}.phase-detail{font-size:0.88rem;color:var(--slate);line-height:1.7;margin:8px 0 24px 0}.phase-detail strong{color:var(--ink)}.phase-detail ul{margin:4px 0 4px 20px}.phase-detail li{margin-bottom:4px}</style></head><body><header class="page-header"><div class="container"><h1>Methodology</h1><div><a href="index.html">Home</a><a href="summary.html" style="margin-left:16px">Summary</a></div></div></header><div class="hero"><div class="container"><div class="company-name">How This Report Is Built</div><div class="tagline">Automated Market Intelligence Pipeline &middot; 2026-06-11 02:10 UTC</div></div></div><main><div class="container"><h2 class="section-title">Pipeline Overview</h2><div class="card"><div class="phase-detail"><p>This report is generated by an automated multi-phase intelligence pipeline that crawls company websites, analyses unstructured content with multiple AI models, validates evidence, and scores sell opportunities. Each data point is traceable to a specific crawled page or external source.</p></div></div><div class="flow"><div class="flow-grid"><div class="flow-phase"><div class="ph">A</div><div class="nm">Solution</div><div class="detail">PDF ingestion</div></div><div class="flow-arrow">→</div><div class="flow-phase"><div class="ph">B</div><div class="nm">Collection</div><div class="detail">Web crawl</div></div><div class="flow-arrow">→</div><div class="flow-phase"><div class="ph">C</div><div class="nm">Analysis</div><div class="detail">3-model AI</div></div><div class="flow-arrow">→</div><div class="flow-phase"><div class="ph">D</div><div class="nm">Report</div><div class="detail">Scoring + charts</div></div></div></div><h2 class="section-title">Phase Details</h2><div class="card"><div class="phase-detail"><strong>Phase A — Solution Ingestion:</strong> Solution documents (PDFs, marketing materials) are ingested and analysed to extract core value propositions, features, target industries, and pricing models. This builds the reference model for pain-solution matching in Phase C. <em>Input: solution PDFs and docs. Output: structured solution profile.</em></div></div>
+<div class="card"><div class="phase-detail"><strong>Phase B — Company Collection:</strong> Target company websites are crawled using a 15-worker concurrent crawler. Pages are selected by an LLM that reads sitemaps and navigation to identify high-value pages (About, Products, Pricing, Blog). HTML is extracted into structured text via BeautifulSoup. External signals (LinkedIn hiring, news, industry reports) supplement the crawl data. <em>Input: company domain + sitemap. Output: extracted page content + structured company data.</em></div></div>
+<div class="card"><div class="phase-detail"><strong>Phase C — Multi-Model Analysis:</strong> Three independent AI models (DeepSeek V3, MiniMax M3, MiMo-v2.5) analyse each company's extracted content to identify pain points. Each pain point includes: label, description, urgency, evidence linking, and confidence score. Results are cross-validated: points from different models are merged via Jaccard similarity if they describe the same underlying problem. An evidence validation agent verifies each claim against the crawled pages, assigning source URLs. <em>Input: structured company data + solution profile. Output: validated pain points with evidence URLs.</em></div></div>
+<div class="card"><div class="phase-detail"><strong>Phase D — Report Generation:</strong> All validated data flows into the report builder. Sell scores are computed from 5 weighted dimensions. Charts are rendered with Chart.js. Narrative summaries are generated for each company. The Deep Market Analysis section uses DeepSeek V3 to synthesise cross-market insights from the complete dataset. All reports are published as static HTML with evidence links, internal navigation, and mobile-responsive design. <em>Input: validated pain points + company data. Output: complete report site with 5 page types.</em></div></div><h2 class="section-title">AI Models</h2><table class="company-table"><thead><tr><th>Model</th><th>Role</th><th>Strengths</th></tr></thead><tr><td>DeepSeek V3</td><td>Reasoning, validation, narrative</td><td>Logical analysis, evidence verification, business writing</td></tr><tr><td>MiniMax M3</td><td>Pain point generation</td><td>Pattern recognition, creative problem identification</td></tr><tr><td>MiMo-v2.5</td><td>Pain point generation (cross-model)</td><td>Alternative perspective, bias reduction via triangulation</td></tr></table><h2 class="section-title">Scoring Methodology</h2><table class="company-table"><thead><tr><th>Dimension</th><th>Weight</th><th>How Measured</th></tr></thead><tr><td>Solution Fit</td><td>30%</td><td>LLM analysis of pain-solution alignment from crawled evidence</td></tr><tr><td>Budget Probability</td><td>20%</td><td>Company size, tech investments, pricing signals</td></tr><tr><td>Urgency</td><td>15%</td><td>Pain severity, time-sensitivity, market pressure</td></tr><tr><td>Strategic Alignment</td><td>20%</td><td>Industry fit, digital maturity, growth trajectory</td></tr><tr><td>Digital Readiness</td><td>15%</td><td>Tech stack, online presence, digital tool adoption</td></tr></table><h2 class="section-title">Evidence &amp; Validation</h2><div class="card"><div class="phase-detail"><p>All claims in this report are evidence-backed:</p><ul><li><strong>Source Capture:</strong> Every evidence item includes its source URL with timestamp.</li><li><strong>Multi-Model Triangulation:</strong> Pain points generated independently by 2-3 models; consensus findings retained.</li><li><strong>Confidence Scoring:</strong> Each pain point scored 0-100% based on: evidence strength (40%), source diversity (20%), cross-model agreement (20%), industry context (20%).</li><li><strong>Deduplication:</strong> Similar pain points merged using Jaccard word similarity (>=50% overlap).</li><li><strong>Evidence Traceability:</strong> Every insight in Summary and Deep Market Analysis cites specific report data.</li></ul></div></div><h2 class="section-title">Chart Types</h2><div class="card"><div class="phase-detail"><ul><li><strong>Confidence Chart:</strong> Bar chart of evidence confidence per pain point — High (>=75%), Mid-High (70-74%), Mid (64-69%), Mid-Low (58-63%), Low (<58%).</li><li><strong>Phase Doughnut:</strong> Clusters pain points by event lifecycle phase (Pre-Event, During, Post-Event, Cross-Cutting).</li><li><strong>Sell Radar:</strong> 5-axis radar chart for each company showing Solution Fit, Budget, Urgency, Strategy, Digital.</li><li><strong>Evidence Bar:</strong> Horizontal bar chart of evidence sources: company statements, media, research, market data.</li></ul></div></div><h2 class="section-title">Limitations</h2><div class="card"><div class="phase-detail"><ul><li><strong>Data Freshness:</strong> Analysis reflects data at crawl time. Rapidly changing companies may need updates.</li><li><strong>LLM Hallucination:</strong> AI models may generate confident but incorrect claims. Validation layer reduces but cannot eliminate this risk.</li><li><strong>Website Coverage:</strong> Some websites may block crawling. LLM knowledge used as fallback.</li><li><strong>External Signals:</strong> LinkedIn hiring, news sentiment supplement but do not replace direct evidence.</li></ul></div></div></div></main><footer><div class="container">GenEd v0.2 &middot; 2026-06-11 02:10 UTC</div></footer></body></html>
